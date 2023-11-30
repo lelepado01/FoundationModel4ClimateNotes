@@ -3,14 +3,14 @@ authors = ["josh rotenberg"]
 language = "en"
 multilingual = false
 src = "src"
-title = "wtd-bayarea"
+title = "Notes"
 
 [rust]
 edition = "2021"
 
 [output.html]
-git-repository-url = "https://github.com/joshrotenberg/wtd-bayarea-mdbook/tree/main"
-edit-url-template = "https://github.com/joshrotenberg/wtd-bayarea-mdbook/edit/main/{path}"
+git-repository-url = "https://github.com/lelepado01/Notes/tree/main"
+edit-url-template = "https://github.com/lelepado01/Notes/edit/main/{path}"
 
 [output.html.search]
 limit-results = 20
