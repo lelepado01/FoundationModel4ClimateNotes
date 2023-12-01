@@ -1,7 +1,13 @@
 # Introduction
 
-* Josh Rotenberg
-* New to Write the Docs community
-* Staff Engineer, Developer Experience at American Express
-* Like to write code, end up playing documentation police
-* Using/learning Rust for about a year
+### TODOs
+
+- [ ] Paper: The rise of data driven weather forecasts
+- [ ] Look at foundation models scaling laws
+- [ ] Is it possible to finetune for prediction of unseen variables?
+- [ ] Look into surrogate models, which can be intergrated into larger projects together
+- [ ] Project: AI CCA cloud classification atlas 
+- [ ] Look into Temporal GNNs
+- [ ] Look into GNNs for climate
+- [ ] Look at Neural GCM @ google
+- [ ] Look at Neural General Circulation Models
