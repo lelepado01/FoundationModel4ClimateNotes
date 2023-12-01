@@ -9,7 +9,7 @@ title = "Foundation Model for Climate Notes"
 edition = "2021"
 
 [output.html]
-git-repository-url = "https://github.com/lelepado01/FoundationModel4ClimateNotes/"
+git-repository-url = "https://github.com/lelepado01/FoundationModel4ClimateNotes/tree/main/src"
 edit-url-template = "https://github.com/lelepado01/FoundationModel4ClimateNotes/edit/main/{path}"
 
 [output.html.search]
