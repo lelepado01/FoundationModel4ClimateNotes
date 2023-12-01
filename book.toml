@@ -9,8 +9,8 @@ title = "Foundation Model for Climate Notes"
 edition = "2021"
 
 [output.html]
-git-repository-url = "https://github.com/lelepado01/Notes/tree/main"
-edit-url-template = "https://github.com/lelepado01/Notes/edit/main/{path}"
+git-repository-url = "https://github.com/lelepado01/FoundationModel4ClimateNotes/tree/main"
+edit-url-template = "https://github.com/lelepado01/FoundationModel4ClimateNotes/edit/main/{path}"
 
 [output.html.search]
 limit-results = 20
