@@ -10,7 +10,7 @@ edition = "2021"
 
 [output.html]
 site-url = "/notesBook/"
-git-repository-url = "https://github.com/lelepado01/FoundationModel4ClimateNotes/tree/main/src"
+git-repository-url = "https://github.com/lelepado01/FoundationModel4ClimateNotes/tree/main/"
 edit-url-template = "https://github.com/lelepado01/FoundationModel4ClimateNotes/edit/main/{path}"
 
 [output.html.search]
