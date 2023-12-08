@@ -9,6 +9,8 @@
 - [Foundation Models](./foundation_models.md)
     - [GNNs](./gnns.md)
     - [ViTs](./vits.md)
+    - [Liquid Neural Networks](./liquid_neural_networks.md)
+    - [Linear Transformers](./linear_transformers.md)
 - [Papers](./papers.md)
     - [ClimaX](./climax.md)
     - [PanguWeather](./panguweather.md)
