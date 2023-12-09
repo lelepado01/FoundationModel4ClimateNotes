@@ -18,6 +18,7 @@
     - [GraphCast](./graphcast.md)
     - [FourcastNet](./fourcastnet.md)
     - [Spatio-Temporal Swin-Transformer](./spatio-temporal_swin-transformer.md)
+    - [ACE](./ace.md)
 - [Development](./development.md)
     - [Parallelization](./parallelization.md)
 - [Model Comparison](./model_comparison.md)

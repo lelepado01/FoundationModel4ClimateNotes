@@ -1,0 +1,508 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Foundation Model for Climate Notes</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="notes_for_talks.html"><strong aria-hidden="true">1.</strong> Notes for Talks</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="a_data_perspective.html"><strong aria-hidden="true">1.1.</strong> A Data-Oriented Perspective</a></li><li class="chapter-item expanded "><a href="ai4good.html"><strong aria-hidden="true">1.2.</strong> Ai for Good talk</a></li></ol></li><li class="chapter-item expanded "><a href="tropical_cyclones.html"><strong aria-hidden="true">2.</strong> Tropical Cyclones</a></li><li class="chapter-item expanded "><a href="foundation_models.html"><strong aria-hidden="true">3.</strong> Foundation Models</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="gnns.html"><strong aria-hidden="true">3.1.</strong> GNNs</a></li><li class="chapter-item expanded "><a href="vits.html"><strong aria-hidden="true">3.2.</strong> ViTs</a></li></ol></li><li class="chapter-item expanded "><a href="papers.html"><strong aria-hidden="true">4.</strong> Papers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="climax.html"><strong aria-hidden="true">4.1.</strong> ClimaX</a></li><li class="chapter-item expanded "><a href="panguweather.html"><strong aria-hidden="true">4.2.</strong> PanguWeather</a></li><li class="chapter-item expanded "><a href="fuxi.html"><strong aria-hidden="true">4.3.</strong> FuXi</a></li><li class="chapter-item expanded "><a href="graphcast.html"><strong aria-hidden="true">4.4.</strong> GraphCast</a></li><li class="chapter-item expanded "><a href="fourcastnet.html"><strong aria-hidden="true">4.5.</strong> FourcastNet</a></li><li class="chapter-item expanded "><a href="spatio-temporal_swin-transformer.html"><strong aria-hidden="true">4.6.</strong> Spatio-Temporal Swin-Transformer</a></li></ol></li><li class="chapter-item expanded "><a href="development.html"><strong aria-hidden="true">5.</strong> Development</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="parallelization.html"><strong aria-hidden="true">5.1.</strong> Parallelization</a></li></ol></li><li class="chapter-item expanded "><a href="model_comparison.html"><strong aria-hidden="true">6.</strong> Model Comparison</a></li><li class="chapter-item expanded "><a href="improvements.html"><strong aria-hidden="true">7.</strong> FM4C Improvements</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Foundation Model for Climate Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/lelepado01/FoundationModel4ClimateNotes/tree/main/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<h3 id="todos"><a class="header" href="#todos">TODOs</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Paper: The rise of data driven weather forecasts</li>
+<li><input disabled="" type="checkbox"/>
+Look at foundation models scaling laws</li>
+<li><input disabled="" type="checkbox"/>
+Is it possible to finetune for prediction of unseen variables?</li>
+<li><input disabled="" type="checkbox"/>
+Look into surrogate models, which can be intergrated into larger projects together</li>
+<li><input disabled="" type="checkbox"/>
+Project: AI CCA cloud classification atlas </li>
+<li><input disabled="" type="checkbox"/>
+Look into Temporal GNNs</li>
+<li><input disabled="" type="checkbox"/>
+Look into GNNs for climate</li>
+<li><input disabled="" type="checkbox"/>
+Look at Neural GCM @ google</li>
+<li><input disabled="" type="checkbox"/>
+Look at Neural General Circulation Models</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="notes-on-talks"><a class="header" href="#notes-on-talks">Notes on Talks</a></h1>
+<ul>
+<li><a href="./ai4good.html">AI for Good talk</a></li>
+<li><a href="./a_data_perspective.html">A Data-Oriented Perspective</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="a-data-oriented-perspective"><a class="header" href="#a-data-oriented-perspective">A Data-Oriented Perspective</a></h1>
+<h2 id="these-are-data-driven-approaches"><a class="header" href="#these-are-data-driven-approaches">These are Data-Driven approaches</a></h2>
+<p>Here are the major climate-centered datasets used in the field:</p>
+<div class="table-wrapper"><table><thead><tr><th>Dataset</th><th>Size</th><th>Where?</th></tr></thead><tbody>
+<tr><td>MACCA</td><td>60 TB</td><td>Nasa</td></tr>
+<tr><td>CMIP6</td><td>25 TB</td><td></td></tr>
+<tr><td>Earth System Configuration Grid</td><td>25 TB</td><td>ORNL</td></tr>
+<tr><td>ERA5</td><td>1.5 PB</td><td>ECMWF</td></tr>
+<tr><td>ARM</td><td>50 TB</td><td>ORNL</td></tr>
+</tbody></table>
+</div>
+<p>Information as value chain: how information is created, stored, and used in a particular context.</p>
+<ul>
+<li>How can we do this?</li>
+<li>How are agencies taken from agencies and used in the field?</li>
+<li>Is data free of errors?</li>
+<li>Without any bias?</li>
+<li>Is the data reliable?</li>
+</ul>
+<h1 id="model-summary"><a class="header" href="#model-summary">Model Summary</a></h1>
+<p>Here are some of the state-of-the-art models in the field and their performance:</p>
+<div class="table-wrapper"><table><thead><tr><th>Model</th><th>Precision</th><th>Forecast time</th></tr></thead><tbody>
+<tr><td>PanguWeather</td><td>&lt; 50 m</td><td>7 days</td></tr>
+<tr><td>GraphWeather</td><td>&lt; 50 m</td><td>7 days</td></tr>
+<tr><td>GraphCast</td><td>&lt; 60 m</td><td>8 days</td></tr>
+<tr><td>ClimaX</td><td>&lt; 100 m</td><td>7 days</td></tr>
+</tbody></table>
+</div>
+<p>Other approaches: </p>
+<ul>
+<li>Swin-SpatioTemporal Transformer: currently evaluated for NASA project 
+Higher complexity, better for small scale</li>
+<li>Spherical Fourier Neural Transformer: to avoid noise and blurring problem
+Due to spherical projection of grid, problem is accentuated at the poles. 
+This model is able to avoid this problem, using this operator for sphere geometry.</li>
+<li>GraphCast is better at small resolution and at different scales. 
+Also better at compressing information.</li>
+<li>IFS uses global 9 km resolution data. On long term forecasts, it is better than ML models.
+However with higher resolution data (25km data), ML models are better.</li>
+<li>Ensamble Forecasts: run several simulation from same initial conditions, and average the results.
+This is a common technique in NWP. Same approach can be used for ML models.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ai-4-good"><a class="header" href="#ai-4-good">AI 4 Good</a></h1>
+<h2 id="second-climate-forecast-revolution"><a class="header" href="#second-climate-forecast-revolution">Second Climate Forecast Revolution</a></h2>
+<p>As the first one revolved around Numerical Weather prediction forecasts (solving physics equations to predict weather eg. IFS). </p>
+<h3 id="weatherbench-1"><a class="header" href="#weatherbench-1">Weatherbench 1</a></h3>
+<p>First attempt at a ML data oriented approach to weather forecasting.
+First winter of AI for climate, as not enough data was available. 
+Data-based approaches were not precise enough to reach NWP levels of accuracy.</p>
+<h3 id="weatherbench-2"><a class="header" href="#weatherbench-2">Weatherbench 2</a></h3>
+<ul>
+<li>Data: in Zarr format + IFS baselines</li>
+<li>Evaluation Code: usind datacloud or other remote computing services (colab, aws, etc)</li>
+<li>Evaluation platform: interactive graphs, for user visualization</li>
+</ul>
+<h2 id="are-ai-models-just-blurring"><a class="header" href="#are-ai-models-just-blurring">Are AI models just blurring?</a></h2>
+<p>How do we understand this factor?
+First we can check if the model is able to predict extremes (or is just averaging the data).</p>
+<p>Blurring exists, but is limited to small scales and does not influence the prediction of extremes.
+Many ML models have been used for Hurrican Season prediction. 
+Graphcast is better than NWP. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tropical-cyclones"><a class="header" href="#tropical-cyclones">Tropical Cyclones</a></h1>
+<h2 id="quick-notes"><a class="header" href="#quick-notes">Quick Notes</a></h2>
+<p>Structure: cyclones develop in the presence of these conditions: </p>
+<ul>
+<li>warm water of tropical oceans (&gt;26.5C) → collects energy through convection (?)</li>
+<li>unstable atmosphere, cooling fast enough to cause thunderstorms</li>
+<li>moist middle atmosphere (humidity) </li>
+<li>low vertical wind shears, and little change in wind direction with change in height</li>
+</ul>
+<p>Tropical Cyclone Genesis potential index (GPI) → accurate, but only at low resolutions</p>
+<p>Often these are good for spatial correlation but bad for temporal one (difficulty in predicting inter-annual events)
+Solution is to use evolutionary algorithms to obtain Pareto Front of possible solutions (all possible optimal trade-offs between spatial and temporal optimality) → all solutions still have non acceptable temporal resolution.</p>
+<p><strong>IMP</strong>:  tropical storms are very rare, lots of samples where the event returns negative, only a small portion positive.</p>
+<h2 id="physics"><a class="header" href="#physics">Physics</a></h2>
+<p>A tropical cyclone is a storm system that rotates rapidly, featuring a low-pressure center, intense
+winds, and an organized series of thunderstorms that cause intense rain and sudden gusts.
+The term tropical refers to the geographical origin of these systems, which form almost exclusively
+over tropical seas, while cyclone refers to their winds moving in a circle, around a central eye, with
+surface winds blowing counterclockwise in the Northern Hemisphere and clockwise in the Southern
+one.
+These cyclones have a diameter most often found
+between 100 and 2,000 km. The powerful swirling winds of a tropical cyclone, as the ones shown
+in Figure 2.3, arise due to the Earth’s rotation imparting angular momentum as air moves towards
+the axis of rotation. These storms are generally most severe when over or near water and quickly
+lose intensity when moving over land. Damage can result from strong winds, rain, high waves, and
+storm surges, all of which are phenomena of rising water caused by high-speed winds pushing water
+towards the coast.</p>
+<p>These tropical storms are low-pressure regions in the troposphere. The pressure is the lowest
+near the surface, while at the center of these storms sea level pressures are among the lowest ever
+observed. These systems are called ”warm core” because the environment near their center is warmer
+than the ambient temperature at all heights.
+At the periphery of the storm, the air may be nearly calm; however, because of the Earth’s rotation, the air
+possesses non-zero absolute angular momentum. As the air flows radially inwards, it starts rotating
+cyclonically so as to conserve angular momentum effectively. At a certain distance from the centre of the storm,
+air starts moving upwards towards the top of the troposphere.
+The air, once lifted, moves away from the storm’s centre and forms
+a layer of high clouds called ”cirrus clouds”. These processes ultimately create a wind field that is
+almost symmetrical around the storm’s centre. Wind speeds are low at the centre, increase moving
+outwards towards the radius of maximum winds and then decay more gradually with radius.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="foundation-models"><a class="header" href="#foundation-models">Foundation Models</a></h1>
+<ul>
+<li><a href="./gnns.html">GNNs</a></li>
+<li><a href="./vits.html">ViTs</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gnns"><a class="header" href="#gnns">GNNs</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vits"><a class="header" href="#vits">ViTs</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="papers"><a class="header" href="#papers">Papers</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="climax"><a class="header" href="#climax">ClimaX</a></h1>
+<p>ClimaX is a foundation model designed to be pre-trained on heterogeneous data sources and then
+fine-tuned to solve various downstream weather and climate problems. </p>
+<p><img src="./imgs/climax1.png" alt="ClimaX Architecture" /></p>
+<p>The set of climate and weather
+variables is extremely broad, and predictions may be required for regional or even spatially incomplete
+data, even at different resolutions. Current CNN-based architectures are not applicable in these
+scenarios, as they require the input to be perfectly gridded, contain a fixed set of variables, and have
+a fixed spatial resolution. resolution. Transformer-based architectures, on the other hand, offer much
+greater flexibility by treating the image-like data as a set of tokens. As a consequence, the backbone
+architecture chosen is a Vision Transformer to provide greater flexibility. </p>
+<p><img src="./imgs/climax2.png" alt="ClimaX Architecture" /></p>
+<p>Two significant changes to this model were implemented. The first change involved variable
+tokenization, which includes separating each variable into its own channel and tokenizing the input
+into a sequence of patches. The second change was variable aggregation, introduced to speed up
+computation by reducing the dimensionality of the input data and to aid in distinguishing between
+different variables, thereby enhancing attention-based training.
+After combining variables, the vision transformer block can produce output tokens that are then
+processed through a linear prediction head to recreate the original image. During the pre-training
+phase, a latitude-weighted reconstruction error is used to keep into account the location of the current
+patch. For fine-tuning, the ClimaX modules can be frozen, allowing for training only on the intended
+part of the architecture. In fact, often only the final prediction head and variable coding modules
+need retraining. This model has undergone testing for several downstream tasks, including global and
+regional forecasting and prediction for unseen climate tasks.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="panguweather"><a class="header" href="#panguweather">PanguWeather</a></h1>
+<p>Pangu Weather is a transformer architecture trained on three dimensional weather variables, as opposed to Climax, where all data was two dimensional. The lead time
+is also handled differently, with the model being trained to predict the weather at a certain time in
+the future, as opposed to the approach taken in the ClimaX work, where the lead time is passed as
+a parameter during the training phase. </p>
+<p><img src="./imgs/pangu2.png" alt="PanguWeather Architecture" /></p>
+<p>The former approach is more similar to the one used in this
+project, where the simplicity of the dataset allows for a more straightforward implementation of the
+lead time, sacrificing some flexibility in the process. Finally, the Pangu weather model features some
+advanced techniques which separate it from all other competitors, namely the use of two different
+resolutions for the encoding of each variable, allowing the model to capture both large scale and small
+scale features, and use the attention mechanism to focus on different parts of the input data at the
+same time. </p>
+<p><img src="./imgs/pangu1.png" alt="PanguWeather Architecture" /></p>
+<p>To achieve these two resolution, an encoder-decoder approach is used, where the encoder
+is tasked with the downscaling of input variables, and the decoder is tasked with the upscaling of the
+output. All transformer blocks are then applied to the output of the encoder, taking as input both
+the low and high resolution information.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="fuxi"><a class="header" href="#fuxi">FuXi</a></h1>
+<p>FiXi is an auto-regressive model for weather forecasting. The model is
+based on the U-transformer architecture, and is able to recurrently produce a prediction for the next
+timestep, given the previous predictions. </p>
+<p><img src="../imgs/fuxi1.png" alt="FuXi" /></p>
+<p>To generate a 15 days forecast, it is estimated it takes the
+model around 60 iterations, with a lead time of 6 hours. The loss utilized is multi-step, meaning it
+takes into account several timesteps at once, minimizing the error for each of them. This is in contrast
+with the approach taken in this project, where the loss is computed for each timestep individually. The
+U-transformer takes as input around 70 variables, for the current timestep, as well as the the preceding
+frame. All the variables used for this model are however restricted to two dimensions, ignoring any
+height layer. This architecture is a variation of the vanilla transformer model, and as opposed to the
+latter, before passing the encoded information to the self attention blocks, it downscales partially the
+input.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="graphcast"><a class="header" href="#graphcast">GraphCast</a></h1>
+<p>Graphcast is a graph neural network architecture with an encoder-decoder
+configuration. The graph neural network is used to encode unstructured input data into a graph
+representation. As opposed to, for instance, convolutional layers where neighbouring information
+is encoded in a structured grid, graph layers use message passing between nodes to capture the
+relationships between different parts of the input data. This allows for the encoding of different kind
+of information, not necessarily restricted to a grid configuration.</p>
+<p><img src="../imgs/graphcast2.png" alt="GraphCast" /></p>
+<p>One important hyperparamter to be set in this kind of architectures is the number of hops the
+messages containing neighbouring information are allowed to travel. This is crucial for the model to
+learn from the correct amount of knowledge, and allows for reducing the computational complexity of
+the model, as the number of hops is directly related to the time required for the model to train.</p>
+<p><img src="../imgs/graphcast1.png" alt="GraphCast" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="fourcastnet"><a class="header" href="#fourcastnet">FourcastNet</a></h1>
+<p>FourcastNet is an architecture based on the Adaptive Fourier Neural Op-
+erator, which is a neural network model designed for high-resolution inputs, fused with a
+vision transformer backbone. The Fourier Neural Operator is a neural network architecture that uses
+a Fourier basis to represent the input data, allowing for the efficient computation of convolutions in
+the Fourier domain. </p>
+<p><img src="../imgs/fourcastnet1.png" alt="FourcastNet" /></p>
+<p>The use of this module allows to have a very small footprint in GPU memory,
+which is crucial for the training of large models. For instance, the base model used is
+around 10Gb in size, while analogue models with similar number of parameters have a size of around
+eight times as large.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="spatio-temporal-swin-transformer"><a class="header" href="#spatio-temporal-swin-transformer">Spatio-Temporal Swin-Transformer</a></h1>
+<p>Input to the model is 4D with the addition of the temporal dimension.</p>
+<p>The input video is defined to be of size T×H×W×3, tokenization is 2x4x4x3: 
+In Video Swin Transformer, we treat each 3D patch of size 2×4×4×3 as a token, while the channel size is not patchified.</p>
+<p><img src="./imgs/swintransformer1.png" alt="Spatio-Temporal Swin-Transformer" /></p>
+<p>Spatial downsampling is applied to reduce the embedding space.
+We used a fully connected layer to scale up the dimension of the incoming data. </p>
+<p>The proposed network is tested on the Weather4Cast2021 weather forecasting challenge
+data, which requires the prediction of 8 hours ahead future frames (4 per hour) from an hour weather product sequence.</p>
+<p>This paper used 3D patch embedding, 3D shifted window multi-head self attention as well as patch merging.
+This paper has 2d variables as channel dimension is not patchified.
+In my case we'll need to create 4D patch embedding as also height layer has to be partitioned.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="development"><a class="header" href="#development">Development</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="parallelization"><a class="header" href="#parallelization">Parallelization</a></h1>
+<h2 id="techniques-for-pytorch"><a class="header" href="#techniques-for-pytorch">Techniques for pytorch</a></h2>
+<ul>
+<li>DDP: the model is copied on all processes, the dataset is split on all the workers and each model is fed a different batch gradient communication is used to keep the models in sync (also overlap of gradient computation)</li>
+<li>RPC: used if training paradigm can’t fit using DDP</li>
+<li>Collective Comms: foundation for RPC and DDP, low level APIs</li>
+</ul>
+<h2 id="paradigms"><a class="header" href="#paradigms">Paradigms</a></h2>
+<ul>
+<li>Model Parallelism: each worker focuses on a portion of the model, best for large models.</li>
+<li>Data Parallelism: split train set on each worker, shared weights (DDP)</li>
+<li>Parameter server architecture: central node with parameters, workers update the weights by computing the gradient </li>
+<li>All-Reduce Comms: several workers compute private gradient, then combine with all-reduce operation to share global gradient.</li>
+<li>Gradient accumulation: compute gradient on several minibatches, used if comms overhead is high.</li>
+</ul>
+<h2 id="distributed-deep-learning"><a class="header" href="#distributed-deep-learning">Distributed deep learning</a></h2>
+<p>Distributed training is the process of subdividing the training workload of, for example, a large neural
+network across multiple processors. These processors are often referred to as workers, and they are
+tasked to compute in parallel to speed up the training process. There are two approaches to parallelism:
+data and model. In data parallelism, the full training set is divided between all the workers, where a
+copy of the model is also kept. Training is done either synchronously, where all the workers wait for
+each other, synchronize the gradients, and only then perform the backward step; or asynchronously,
+where a selected worker is tasked with keeping an updated version of the weights, and all the others
+can read and write from this worker, often called a ”parameter server”. Using the latter procedure
+means that all resources are used at the same time, without any delay. However, it also means that
+only one worker at a time is training with the latest version of the weights. In large clusters the
+centralized nature of this approach can also create bottlenecks. Model parallelism, on the other hand,
+divides the model either horizontally, i.e. node-wise, or vertically, i.e. layer-wise, between several
+workers who are allowed to run at the same time. This approach also reduces the footprint of the
+model in each worker, making it lighter on the GPU’s memory.</p>
+<h3 id="ddp"><a class="header" href="#ddp">DDP</a></h3>
+<p>Distributed Data Parallel is a method of data parallelism that enables a program to operate on
+numerous machines simultaneously. Applications utilizing DDP generate numerous processes and
+initialize one DDP instance for each process. </p>
+<h3 id="fsdp"><a class="header" href="#fsdp">FSDP</a></h3>
+<p>In some cases, it may not be possible to create a duplicate of the model for every process. In
+these instances, Fully Sharded Data Parallel may be utilized, where the optimiser states, gradients,
+and parameters of the model are subdivided across all DDP ranks. In this case, the neural network is
+divided into smaller sub-models, each of which represents a portion of the parameters of the overall
+model. This approach allows different parts of the model to be processed simultaneously by different
+processing units, and can be used in conjunction with a data-parallel approach that splits the training
+set to achieve even faster processing times. This results in a program that has less impact on GPU
+memory, thus reducing execution times.</p>
+<h3 id="deepspeed"><a class="header" href="#deepspeed">DeepSpeed</a></h3>
+<p>DeepSpeed is a deep learning optimisation suite that enables efficient scalability and faster
+execution times for both training and inference of large machine learning models. It was developed
+by Microsoft and claims to offer a 15x speedup over other state-of-the-art parallelization techniques.
+It provides memory efficient data parallelism and enables training without model parallelism through
+a novel solution called Zero Redundancy Optimizer. Unlike basic data parallelism, where memory
+states are replicated across data-parallel processes, ZeRO partitions model states and gradients to save
+significant memory. Several other memory optimisation techniques are also used, such as Constant
+Buffer Optimisation, which combines all communication-based operations into a single operand, and
+Contiguous Memory Optimisation, which reduces fragmentation during training.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="comparing-state-of-the-art-models"><a class="header" href="#comparing-state-of-the-art-models">Comparing State-of-the-Art Models</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="foundation-model-for-climate-improvements"><a class="header" href="#foundation-model-for-climate-improvements">Foundation Model for Climate Improvements</a></h1>
+<h2 id="incremental-probability-in-cyclone-prediction"><a class="header" href="#incremental-probability-in-cyclone-prediction">Incremental Probability in Cyclone Prediction</a></h2>
+<p>One possible improvement to the presented work arises from the fact that the dataset currently illustrates the likelihood of a cyclone being present in a patch with a simple Gaussian distribution. Nonetheless, as the weather variables increasingly make it more plausible, the probability of a cyclone should raise over time. It may be possible to encode this behaviour by manipulating the standard deviation parameter of the Gaussian, resulting in the probability area progressively expanding over time. This would require determining when a patch is displaying indications of forming a tropical cyclone and identifying the exact central position in the patch.</p>
+<h2 id="parameter-oriented-training"><a class="header" href="#parameter-oriented-training">Parameter oriented training</a></h2>
+<p>One of the main differences between the current implementation of the model and the one presented in the ClimaX paper, is the fact that the latter is trained to predict the input variables shifted by a certain amount of lead time, and the training is repeated for several lead times. This allows the architecture to learn the correct behaviour of each variable over time, and enhances its flexibility by allowing at inference time to take a lead time parameter, and output the correct prediction. This approach has been referenced to as ”parameter oriented training”, and by its very flexible nature allows for a more general purpose model, which can be used for several different tasks.</p>
+<h2 id="global-forecasting-system"><a class="header" href="#global-forecasting-system">Global forecasting system</a></h2>
+<p>In a similar way to ClimaX’s approach, it may be feasible to merge the image patches and generate a worldwide weather forecast. This would not necessitate any modifications to the current model since the global image normalization is already executed. Additionally, the dataset can be adjusted to share an N-pixel border with adjoining patches and prevent loss of nearby data.
+This modification addresses weather variable forecasting and has no impact on this project’s fine- tuning section. Predicting global cyclones may not be necessary since the regions where they most often form are widely recognized, and a regional forecasting approach would be enough.</p>
+<h2 id="time-series-transformers"><a class="header" href="#time-series-transformers">Time-Series Transformers</a></h2>
+<p>Among several advantages of the transformer architecture, the ability to capture long-range depen- dencies and interactions is particularly central to time series modeling.
+A possible improvement to the current work could revolve around increasing the dimensionality of the input data by adding a temporal dimension, and using this information to better predict the future weather. This would imply passing a sequence of time snapshots to the model, and the tensor’s dimensions would become &lt;B, T, V, H, Lat, Lon&gt;, where T is the number of time snapshots.</p>
+<p>As for the modifications necessary to the current architecture, the positional encoding of the transformer has to be changed, to allow for the correct encoding of the temporal dimension. What has been done in similar works, is allow for the embedding to be learned from time series data, and not be fixed as in the current work. A similar approach is to use the timestamp information to influence the training of these embedding layers, and allow for a more accurate representation of the data.</p>
+<h2 id="ensemble-of-models"><a class="header" href="#ensemble-of-models">Ensemble of models</a></h2>
+<h2 id="connection-to-the-intertwin-project"><a class="header" href="#connection-to-the-intertwin-project">Connection to the Intertwin project</a></h2>
+<p>One possible mean of unifying the two works could revolve around the use of graph neural network architectures, and integrating these mostly novel approaches into large foundation models. While Fronza’s work revolved around graph neural networks, there exist in the literature examples of applications of these kind of models to global weather forecasting, which is an essential requirement for developing a foundation model based on GNNs. These techniques have already been tested in the literature, where Graph Transformers are used to generate text, processing both the data with the classical approach, but also building a knowledge graph of the sentence, enhancing the understanding of the context. This approach could be used to build a foundation model which is able to understand the context of the input data, and use this knowledge to improve the prediction ability of the model. In this case, the context could be the current regional weather, and the model could use this information to better predict the future weather</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
