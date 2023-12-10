@@ -7,7 +7,6 @@ In Video Swin Transformer, we treat each 3D patch of size 2×4×4×3 as a token,
 
 ![Spatio-Temporal Swin-Transformer](./imgs/swintransformer1.png)
 
-
 Spatial downsampling is applied to reduce the embedding space.
 We used a fully connected layer to scale up the dimension of the incoming data. 
 

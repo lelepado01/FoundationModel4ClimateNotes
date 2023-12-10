@@ -1,7 +1,6 @@
 # Summary
 
-[Introduction](./README.md)
-
+- [Introduction](./README.md)
 - [Notes for Talks](./notes_for_talks.md)
     - [A Data-Oriented Perspective](./a_data_perspective.md)
     - [Ai for Good talk](./ai4good.md)
@@ -12,6 +11,7 @@
     - [General Circulation Models](./general_circulation_models.md)
     - [Liquid Neural Networks](./liquid_neural_networks.md)
     - [Linear Transformers](./linear_transformers.md)
+    - [Linear Transformers as FWP](./linear_transformers_as_fwp.md)
     - [Recurrent Fast Weight Programmers](./recurrent_fast_weight_programmers.md)
 - [Papers](./papers.md)
     - [ClimaX](./climax.md)
@@ -24,4 +24,6 @@
 - [Development](./development.md)
     - [Parallelization](./parallelization.md)
 - [Model Comparison](./model_comparison.md)
+- [Challenges and Opportunities](./challenges_and_opportunities.md)
 - [FM4C Improvements](./improvements.md)
+- [References](./reference.md)
