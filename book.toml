@@ -12,6 +12,7 @@ edition = "2021"
 site-url = "/notesBook/"
 git-repository-url = "https://github.com/lelepado01/FoundationModel4ClimateNotes/tree/main/"
 edit-url-template = "https://github.com/lelepado01/FoundationModel4ClimateNotes/edit/main/{path}"
+mathjax-support = true
 
 [output.html.search]
 limit-results = 20

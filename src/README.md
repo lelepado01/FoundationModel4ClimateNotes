@@ -1,5 +1,10 @@
 # Introduction
 
+### Resources
+
+> [Summary](https://github.com/shengchaochen82/Awesome-Foundation-Models-for-Weather-and-Climate)
+
+
 ### TODOs
 
 - [ ] Paper: The rise of data driven weather forecasts
@@ -11,3 +16,5 @@
 - [ ] Look into GNNs for climate
 - [ ] Look at Neural GCM @ google
 - [ ] Look at Neural General Circulation Models
+- [ ] Look at Liquid neural networks
+- [ ] Look at Recurrent Fast Weight Programmers
