@@ -4,6 +4,12 @@
 
 > [Summary](https://github.com/shengchaochen82/Awesome-Foundation-Models-for-Weather-and-Climate)
 
+### Ideas
+
+ - [ ] Ensamble of models which output the certainty of their prediction, instead of the prediction
+ - [ ] Tool for long range prediction (years) with CMIP data
+ - [ ] Graph compression with GNNs, which can be used for data elaboration
+
 ### TODOs
 
 - [ ] Paper: The rise of data driven weather forecasts
