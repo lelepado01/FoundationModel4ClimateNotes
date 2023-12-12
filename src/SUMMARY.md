@@ -18,6 +18,7 @@
     - [FourcastNet](./fourcastnet.md)
     - [ACE](./ace.md)
     - [ExPT](./expt.md)
+    - [MaxViT](./maxvit.md)
     - [Closed-form continuous-time neural networks](./closed-form_continuous-time_neural_networks.md)
     - [Recurrent Fast Weight Programmers](./recurrent_fast_weight_programmers.md)
     - [Liquid Neural Networks](./liquid_neural_networks.md)
