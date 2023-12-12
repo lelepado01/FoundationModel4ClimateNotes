@@ -1,5 +1,7 @@
 # ClimaX
 
+> [Paper](https://arxiv.org/abs/2301.10343) | [Code](https://github.com/microsoft/ClimaX)
+
 ClimaX is a foundation model designed to be pre-trained on heterogeneous data sources and then
 fine-tuned to solve various downstream weather and climate problems. 
 

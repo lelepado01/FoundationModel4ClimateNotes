@@ -1,5 +1,7 @@
 # MetNet 3 
 
+> [Paper](https://arxiv.org/abs/2003.12140) | [Code](https://github.com/lucidrains/metnet3-pytorch)
+
 - Temporal resolution: 2 minutes
 - Spatial resolution: 1 km
 

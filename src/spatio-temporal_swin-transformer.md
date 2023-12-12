@@ -1,5 +1,7 @@
 # Spatio-Temporal Swin-Transformer
 
+> [Paper](https://www.researchgate.net/profile/Hasan-Al-Marzouqi/publication/354371186_Spatiotemporal_Swin-Transformer_Network_for_Short_time_weather_forecasting/links/61c449a352bd3c7e05874c43/Spatiotemporal-Swin-Transformer-Network-for-Short-time-weather-forecasting.pdf)
+
 Input to the model is 4D with the addition of the temporal dimension.
 
 The input video is defined to be of size T×H×W×3, tokenization is 2x4x4x3: 

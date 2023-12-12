@@ -1,5 +1,7 @@
 # FuXi
 
+> [Paper](https://arxiv.org/abs/2306.12873) | [Code](https://github.com/tpys/FuXi)
+
 FiXi is an auto-regressive model for weather forecasting. The model is
 based on the U-transformer architecture, and is able to recurrently produce a prediction for the next
 timestep, given the previous predictions. 

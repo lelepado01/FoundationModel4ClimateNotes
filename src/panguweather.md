@@ -1,5 +1,7 @@
 # PanguWeather
 
+> [Paper](https://arxiv.org/abs/2211.02556) | [Code](https://github.com/198808xc/Pangu-Weather)
+
 Pangu Weather is a transformer architecture trained on three dimensional weather variables, as opposed to Climax, where all data was two dimensional. The lead time
 is also handled differently, with the model being trained to predict the weather at a certain time in
 the future, as opposed to the approach taken in the ClimaX work, where the lead time is passed as

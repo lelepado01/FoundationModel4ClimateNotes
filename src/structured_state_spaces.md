@@ -1,7 +1,7 @@
 
 # Structured State Spaces
 
-> [Paper]() | [Code]()
+> [Paper](https://arxiv.org/abs/2111.00396) | [Code](https://github.com/state-spaces/s4)
 
 ## Introduction
 

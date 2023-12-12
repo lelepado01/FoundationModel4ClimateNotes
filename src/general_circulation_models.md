@@ -1,7 +1,5 @@
 # General Circulation Models
 
-> [Paper]() |
-[Code]()
 
 ## Introduction
 
@@ -9,7 +7,7 @@ General Circulation Models (GCMs) are a class of models which use a combination 
 
 ## Neural GCM
 
-> [Paper](https://arxiv.org/pdf/2106.05784.pdf) |
+> [Paper](https://arxiv.org/abs/2311.07222) |
 [Code]()
 
 Neural GCM is a GCM which uses a neural network to represent the small scale processes. 

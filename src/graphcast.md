@@ -1,5 +1,7 @@
 # GraphCast
 
+> [Paper](https://arxiv.org/abs/2212.12794) | [Code](https://github.com/google-deepmind/graphcast)
+
 Graphcast is a graph neural network architecture with an encoder-decoder
 configuration. The graph neural network is used to encode unstructured input data into a graph
 representation. As opposed to, for instance, convolutional layers where neighbouring information

@@ -1,7 +1,7 @@
 # Liquid Neural Networks
 
-> [Code](https://github.com/mlech26l/ncps) |
-[Explained]()
+> [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/16936) | [Code](https://github.com/mlech26l/ncps) |
+[Explained](https://www.youtube.com/watch?v=IlliqYiRhMU&pp=ugMICgJpdBABGAHKBRVsaXF1aWQgbmV1cmFsIG5ldHdvcms%3D) 
 
 ## Introduction
 
