@@ -13,6 +13,7 @@
     - [Structured State Spaces](./structured_state_spaces.md)
 - [Benchmarks](./benchmarks.md)
     - [ClimateLearn](./climatelearn.md)
+    - [ClimateBench](./climatebench.md)
     - [WeatherBench](./weatherbench.md)
 - [Papers](./papers.md)
     - [ClimaX](./climax.md)

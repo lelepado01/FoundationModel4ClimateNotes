@@ -20,9 +20,9 @@ The bias parameter B is decided to be part of the trainable parameters of the ne
 
 We also replace A with another neural network instance, h(. ) to enhance the flexibility of the model. 
 
-Instead of learning all three neural network instances f, g and h sepa- rately, we have them share the first few layers in the form of a backbone that branches out into these three functions. As a result, the backbone allows our model to learn shared representations. 
+Instead of learning all three neural network instances f, g and h separately, we have them share the first few layers in the form of a backbone that branches out into these three functions. As a result, the backbone allows our model to learn shared representations. 
 
-The time complexity of the algorithm is equivalent to that of discretized recurrent networks, being at least one order of magnitude faster than ODE-based networks.
+The time complexity of the algorithm is equivalent to that of *discretized recurrent networks*, being at least one order of magnitude faster than *ODE-based networks*.
 
 ## Problems
 

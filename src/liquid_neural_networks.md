@@ -22,7 +22,7 @@ Synaptic release is more than just a scalar, and adds non-linearity to the syste
 
 ## Liquid State Machines
 
-Continuous time/depth neural networks (CTRNNs) are a type of recurrent neural network (RNN) where the nodes (neurons) are described by differential equations.
+**Continuous time/depth neural networks** (CTRNNs) are a type of recurrent neural network (RNN) where the nodes (neurons) are described by differential equations.
 
 \\( \frac{dx(t)}{dx} = f_{n,k,l}(x(t), I(t), \theta) \\)
 
@@ -36,14 +36,14 @@ There is no computation for each time step, the network is updated arbitrairly, 
 
 ## Implementation
 
-Numerical ODE solver
+We need a numerical ODE solver, to resolve the differential equations.
 
 The backward pass can either be done with the adjoint sensitivity method (loss + neural ODE solver + adjoint state) or with the backpropagation through time method (classic).
 The latter method is considered better as it is not a black box. 
 
 ## Liquid Time-Constant Networks
 
-Leaky integrator neural model 
+**Leaky integrator neural model**
 
 \\( \frac{dx(t)}{dt} = -\frac{x(t)}{\tau} + f_{n,k,l}(x(t), I(t), \theta) \\)
 
@@ -78,7 +78,7 @@ Some limitations include:
 
 ## Neural Circuit Policies
 
-Neural Circuit Policies are recurrent neural network models inspired by the nervous system of the nematode C. elegans. Compared to standard ML models, NCPs have
+**Neural Circuit Policies** are recurrent neural network models inspired by the nervous system of the nematode C. elegans. Compared to standard ML models, NCPs have
 
 - Neurons that are modeled by an ordinary differential equation
 - A sparse structured wiring

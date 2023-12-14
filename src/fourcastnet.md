@@ -2,8 +2,7 @@
 
 > [Paper](https://arxiv.org/abs/2202.11214) | [Code](https://github.com/NVlabs/FourCastNet)
 
-FourcastNet is an architecture based on the Adaptive Fourier Neural Op-
-erator, which is a neural network model designed for high-resolution inputs, fused with a
+FourcastNet is an architecture based on the *Adaptive Fourier Neural Operator*, which is a neural network model designed for high-resolution inputs, fused with a
 vision transformer backbone. The Fourier Neural Operator is a neural network architecture that uses
 a Fourier basis to represent the input data, allowing for the efficient computation of convolutions in
 the Fourier domain. 

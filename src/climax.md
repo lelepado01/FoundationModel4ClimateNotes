@@ -13,7 +13,7 @@ data, even at different resolutions. Current CNN-based architectures are not app
 scenarios, as they require the input to be perfectly gridded, contain a fixed set of variables, and have
 a fixed spatial resolution. resolution. Transformer-based architectures, on the other hand, offer much
 greater flexibility by treating the image-like data as a set of tokens. As a consequence, the backbone
-architecture chosen is a Vision Transformer to provide greater flexibility. 
+architecture chosen is a **Vision Transformer** to provide greater flexibility. 
 
 ![ClimaX Architecture](./imgs/climax2.png)
 

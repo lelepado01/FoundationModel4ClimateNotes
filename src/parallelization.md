@@ -6,11 +6,11 @@
  - Collective Comms: foundation for RPC and DDP, low level APIs
 
 ## Paradigms
- - Model Parallelism: each worker focuses on a portion of the model, best for large models.
- - Data Parallelism: split train set on each worker, shared weights (DDP)
- - Parameter server architecture: central node with parameters, workers update the weights by computing the gradient 
- - All-Reduce Comms: several workers compute private gradient, then combine with all-reduce operation to share global gradient.
- - Gradient accumulation: compute gradient on several minibatches, used if comms overhead is high.
+ - **Model Parallelism**: each worker focuses on a portion of the model, best for large models.
+ - **Data Parallelism**: split train set on each worker, shared weights (DDP)
+ - **Parameter server architecture**: central node with parameters, workers update the weights by computing the gradient 
+ - **All-Reduce Comms**: several workers compute private gradient, then combine with all-reduce operation to share global gradient.
+ - **Gradient accumulation**: compute gradient on several minibatches, used if comms overhead is high.
 
 ## Distributed deep learning
 
@@ -49,7 +49,7 @@ memory, thus reducing execution times.
 
 ### DeepSpeed
 
-DeepSpeed is a deep learning optimisation suite that enables efficient scalability and faster
+**DeepSpeed** is a deep learning optimisation suite that enables efficient scalability and faster
 execution times for both training and inference of large machine learning models. It was developed
 by Microsoft and claims to offer a 15x speedup over other state-of-the-art parallelization techniques.
 It provides memory efficient data parallelism and enables training without model parallelism through

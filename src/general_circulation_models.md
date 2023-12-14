@@ -14,8 +14,8 @@ Neural GCM is a GCM which uses a neural network to represent the small scale pro
 It is competitive with ML models on 10 days forecasts, and competitive with IFS on 15 days forecasts.
 
 Uses a fully differentiable hybrid GCM of the atmosphere, with a model split into two main subcomponents: 
-- A Differentiable Dynamical Core (DDC) which solves the equations of motion (dynamic equations); 
-- A Learned Physics module, which learns to parametrize a set of physical processes (physics equations) with a neural network.
+- A **Differentiable Dynamical Core** (DDC) which solves the equations of motion (dynamic equations); 
+- A **Learned Physics module**, which learns to parametrize a set of physical processes (physics equations) with a neural network.
 
 ## End-to-end training of GCMs
 
@@ -37,4 +37,4 @@ Remained stable for year-long simulations.
 
 Introduces randomness to be able to produce ensambles of forecasts.
 
-Loss is CRPS (Continuous Ranked Probability Score) = Mean absolute error + Variance in ensamble spread
+Loss is *CRPS* (Continuous Ranked Probability Score) = Mean absolute error + Variance in ensamble spread

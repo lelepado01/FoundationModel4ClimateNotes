@@ -12,7 +12,7 @@ How to rout information in a sequence of tokens? -> We use query + key matrices
 - Key: what type of info the node contains (what info we have)
 
 Inner product is used to rout (similarity between query and key). 
-This is called *soft-routing* as it is a weighted average of all the keys (where inner product is lerger).
+This is called *soft-routing* as it is a weighted average of all the keys (where inner product is larger).
 
 Complexity is \\( O(n^2) \\), where n is the number of tokens (sequence length), embedding size is d. 
 
@@ -41,7 +41,7 @@ The shapes so are correct for matmult.
 
 ## Results
 
-With large sequence lengths, the linear transformer keeps inference times constant, as it doesn't depend on the sequence length n but also on k.
+With large sequence lengths, the linear transformer keeps inference times **constant**, as it doesn't depend on the sequence length n but also on k.
 Complexity is reduced from \\( O(n^2) \\) to \\( O(nk) \\).
 
 How to choose k?

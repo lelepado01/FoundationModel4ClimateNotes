@@ -3,13 +3,12 @@
 > [Paper](https://link.springer.com/chapter/10.1007/978-3-031-20053-3_27) | [Code](https://github.com/google-research/maxvit)
 
 Makes use of a new scalable attention model (multi-axis attention). 
-- Blocked local attention: attention is only computed within a block of tokens.
-- Dilated global attention: attend to some tokens is a sparse way.
+- **Blocked local attention**: attention is only computed within a block of tokens.
+- **Dilated global attention**: attend to some tokens is a sparse way.
 
 Allows for linera complexity interactions between local/global tokens. 
 
 Normally attention requires quadratic complexity, but this is reduced to linear complexity. Attention is decomposed into local and global attention (by decomposing spatial axis).
-
 
 Given:
 

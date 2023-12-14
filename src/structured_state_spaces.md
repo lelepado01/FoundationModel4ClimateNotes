@@ -15,7 +15,7 @@ Use seq to seq map to map input to a latent space.
 
 ## Model
 
-These are continuous time models (CTMs), which also allow for irregular sampling.
+These are **continuous time models** (CTMs), which also allow for irregular sampling.
 
 Drawbacks are that are inefficient and prone to vanishing gradients.
 
