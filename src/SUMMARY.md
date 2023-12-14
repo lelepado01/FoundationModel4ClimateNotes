@@ -11,7 +11,7 @@
     - [General Circulation Models](./general_circulation_models.md)
     - [Linear Transformers](./linear_transformers.md)
     - [Structured State Spaces](./structured_state_spaces.md)
-- [Benchmarks]
+- [Benchmarks](./benchmarks.md)
     - [ClimateLearn](./climatelearn.md)
     - [WeatherBench](./weatherbench.md)
 - [Papers](./papers.md)
