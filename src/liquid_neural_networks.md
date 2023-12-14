@@ -59,6 +59,10 @@ Activations are changed to differential equations, interactions are given by non
 
 The network might associate the dynamics of the task with its own behaviour (ex. steering left/right implies camera movement).
 
+The liquid time-constant (LTC) model is based on neurons in the form of differential equations interconnected via sigmoidal synapses.
+
+Because LTCs are ordinary differential equations, their behavior can only be described over time. LTCs are universal approximators and implement causal dynamical models. However, the LTC model has one major disadvantage: to compute their output, we need a numerical differential equation-solver which seriously slows down their training and inference time. 
+
 ## Expressivity
 
 Using the trajectory length method it is possible to measure the expressivity of a network.
@@ -72,3 +76,9 @@ Some limitations include:
 - the complexity of this network is tied to the ODE solver, which use fixed steps. Some solutions include Hypersolvers, closed form solutions and sparse flows.
 - Vanishing gradients and exploding gradients are still a problem. A possible solution is to use a mixed memory wrapper.
 
+## Neural Circuit Policies
+
+Neural Circuit Policies are recurrent neural network models inspired by the nervous system of the nematode C. elegans. Compared to standard ML models, NCPs have
+
+- Neurons that are modeled by an ordinary differential equation
+- A sparse structured wiring
