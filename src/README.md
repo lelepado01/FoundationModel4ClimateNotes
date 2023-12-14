@@ -32,7 +32,7 @@ Agile approach to research, with many small projects (POC), check up every 3-6 m
 - [ ] Project: AI CCA cloud classification atlas 
 - [ ] Look into Temporal GNNs
 - [ ] Look into GNNs for climate
-- [ ] Look at Neural GCM @ google
-- [ ] Look at Neural General Circulation Models
+- [x] Look at Neural GCM @ google
+- [x] Look at Neural General Circulation Models
 - [x] Look at Liquid neural networks
-- [ ] Look at Recurrent Fast Weight Programmers
+- [x] Look at Recurrent Fast Weight Programmers

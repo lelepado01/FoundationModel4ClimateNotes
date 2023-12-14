@@ -11,6 +11,9 @@
     - [General Circulation Models](./general_circulation_models.md)
     - [Linear Transformers](./linear_transformers.md)
     - [Structured State Spaces](./structured_state_spaces.md)
+- [Benchmarks]
+    - [ClimateLearn](./climatelearn.md)
+    - [WeatherBench](./weatherbench.md)
 - [Papers](./papers.md)
     - [ClimaX](./climax.md)
     - [PanguWeather](./panguweather.md)
@@ -26,6 +29,7 @@
     - [Spatio-Temporal Swin-Transformer](./spatio-temporal_swin-transformer.md)
     - [GraphCast](./graphcast.md)
     - [Linear Transformers as FWP](./linear_transformers_as_fwp.md)
+    - [AI CCA](./ai_cca.md)
 - [Development](./development.md)
     - [Parallelization](./parallelization.md)
 - [Model Comparison](./model_comparison.md)
