@@ -2,6 +2,19 @@
 
 [Introduction](./README.md)
 
+# IPCC Reports
+- [WG1](ipcc_wg1.md)
+- [WG2](ipcc_wg2.md)
+- [WG3](ipcc_wg3.md)
+- [AR6](ipcc_ar6.md)
+
+# Models
+- [GNNs](./gnns.md)
+- [ViTs](./vits.md)
+- [General Circulation Models](./general_circulation_models.md)
+- [Linear Transformers](./linear_transformers.md)
+- [Structured State Spaces](./structured_state_spaces.md)
+
 # Papers
 - [ClimaX](./climax.md)
 - [PanguWeather](./panguweather.md)
@@ -18,19 +31,6 @@
 - [GraphCast](./graphcast.md)
 - [Linear Transformers as FWP](./linear_transformers_as_fwp.md)
 - [AI CCA](./ai_cca.md)
-
-## Models
-- [GNNs](./gnns.md)
-- [ViTs](./vits.md)
-- [General Circulation Models](./general_circulation_models.md)
-- [Linear Transformers](./linear_transformers.md)
-- [Structured State Spaces](./structured_state_spaces.md)
-
-# IPCC Reports
-- [WG1](ipcc_wg1.md)
-- [WG2](ipcc_wg2.md)
-- [WG3](ipcc_wg3.md)
-- [AR6](ipcc_ar6.md)
 
 # Benchmarks
 - [ClimateLearn](./climatelearn.md)

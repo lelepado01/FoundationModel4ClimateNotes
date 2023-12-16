@@ -13,6 +13,7 @@ site-url = "/notesBook/"
 git-repository-url = "https://github.com/lelepado01/FoundationModel4ClimateNotes/tree/main/"
 edit-url-template = "https://github.com/lelepado01/FoundationModel4ClimateNotes/edit/main/{path}"
 mathjax-support = true
+additional-css = ["./mdbook-admonish.css"]
 
 [output.html.search]
 limit-results = 20
@@ -22,3 +23,9 @@ boost-hierarchy = 2
 boost-paragraph = 1
 expand = true
 heading-split-level = 2
+
+[preprocessor]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.1" # do not edit: managed by `mdbook-admonish install`

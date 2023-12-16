@@ -36,3 +36,7 @@ Agile approach to research, with many small projects (POC), check up every 3-6 m
 - [x] Look at Neural General Circulation Models
 - [x] Look at Liquid neural networks
 - [x] Look at Recurrent Fast Weight Programmers
+
+```admonish warning
+   A beautifully styled message.
+```
