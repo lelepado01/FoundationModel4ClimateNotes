@@ -1,8 +1,8 @@
 # Summary
 
-- [Introduction](./README.md)
+[Introduction](./README.md)
 
-## Papers
+# Papers
 - [ClimaX](./climax.md)
 - [PanguWeather](./panguweather.md)
 - [FuXi](./fuxi.md)
@@ -26,21 +26,21 @@
 - [Linear Transformers](./linear_transformers.md)
 - [Structured State Spaces](./structured_state_spaces.md)
 
-## IPCC Reports
+# IPCC Reports
 - [WG1](ipcc_wg1.md)
 - [WG2](ipcc_wg2.md)
 - [WG3](ipcc_wg3.md)
 - [AR6](ipcc_ar6.md)
 
-## Benchmarks
+# Benchmarks
 - [ClimateLearn](./climatelearn.md)
 - [ClimateBench](./climatebench.md)
 - [WeatherBench](./weatherbench.md)
 
-## Development
+# Development
 - [Parallelization](./parallelization.md)
 
-## Useful Stuff
+# Useful Stuff
 - [Notes for Talks](./notes_for_talks.md)
     - [A Data-Oriented Perspective](./a_data_perspective.md)
     - [Ai for Good talk](./ai4good.md)
@@ -48,5 +48,7 @@
 - [Model Comparison](./model_comparison.md)
 - [Challenges and Opportunities](./challenges_and_opportunities.md)
 - [FM4C Improvements](./improvements.md)
+
+# Footnotes
 
 [References](./reference.md)
