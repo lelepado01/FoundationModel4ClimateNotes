@@ -13,7 +13,9 @@ Widespread and rapid changes in the atmosphere, ocean, cryosphere and biosphere 
 
 Approximately 3.3 to 3.6 billion people live in contexts that are highly vulnerable to climate change. Human and ecosystem vulnerability are interdependent. Regions and people with considerable development constraints have high vulnerability to climatic hazards.
 
-Impacts on some ecosystems are approaching irreversibility such as the impacts of hydrological changes resulting from the retreat of glaciers, or the changes in some mountain and Arctic ecosystems driven by permafrost thaw. 
+``` admonish error
+    Impacts on some ecosystems are approaching irreversibility such as the impacts of hydrological changes resulting from the retreat of glaciers, or the changes in some mountain and Arctic ecosystems driven by permafrost thaw.  
+```
 
 Climate change has reduced food security and affected water security, hindering efforts to meet Sustainable Development Goals. 
 In all regions increases in extreme heat events have resulted in human mortality and morbidity. The occurrence of climate-related food-borne and water-borne diseases and the incidence of vector-borne diseases have increased. In assessed regions, some mental health challenges are associated with increasing temperatures. 
@@ -29,7 +31,9 @@ Key barriers to adaptation are limited resources, lack of private sector and cit
 Policies and laws addressing mitigation have consistently expanded since AR5. Global GHG emissions in 2030 implied by nationally determined contributions (NDCs) announced by October 2021 make it likely that warming will exceed 1.5°C during the 21st century and make it harder to limit warming below 2°C. 
 There are gaps between projected emissions from implemented policies and those from NDCs and finance flows fall short of the levels needed to meet climate goals across all sectors and regions. 
 
+``` admonish note
 From 2010 to 2019 there have been sustained decreases in the unit costs of solar energy (85%), wind energy (55%), and lithium-ion batteries (85%), and large increases in their deployment. 
+```
 
 Policies implemented by the end of 2020 are projected to result in higher global GHG emissions in 2030 than emissions implied by NDCs, indicating an ‘implementation gap’. 
 
@@ -49,7 +53,9 @@ The level of risk will also depend on trends in vulnerability and exposure of hu
 Some future changes are unavoidable and/or irreversible but can be limited by deep, rapid, and sustained global greenhouse gas emissions reduction. The likelihood of abrupt and/or irreversible changes increases with higher global warming levels. 
 Deep, rapid, and sustained GHG emissions reductions would limit further sea level rise acceleration and projected long-term sea level rise commitment.
 
+``` admonish warning
 As warming levels increase, so do the risks of species extinction or irreversible loss of biodiversity in ecosystems including forests, coral reefs, and in Arctic regions. 
+```
 
 Adaptation options that are feasible and effective today will become constrained and less effective with increasing global warming. With increasing global warming, losses and damages will increase and additional human and natural systems will reach adaptation limits. 
 
@@ -60,7 +66,6 @@ Limiting human-caused global warming requires net zero CO2 emissions. Cumulative
 If warming exceeds a specified level such as 1.5°C, it could gradually be reduced again by achieving and sustaining net negative global CO2 emissions. This would require additional deployment of carbon dioxide removal, compared to pathways without overshoot, leading to greater feasibility and sustainability concerns. Overshoot entails adverse impacts, some irreversible, and additional risks for human and natural systems, all growing with the magnitude and duration of overshoot. 
 
 ### C. Responses in the Near Term
-
 
 There is a rapidly closing window of opportunity to secure a liveable and sustainable future for all. 
 increased international cooperation including improved access to adequate financial resources, particularly for vulnerable regions, sectors and groups, and inclusive governance and coordinated policies. 

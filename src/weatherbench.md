@@ -1,5 +1,5 @@
 # WeatherBench
 
-> [Paper](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020MS002203)
+> [Paper](https://arxiv.org/abs/2002.00469) | [Code](https://github.com/pangeo-data/WeatherBench)
 
 ### Resources

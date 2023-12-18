@@ -13,7 +13,9 @@ Tropical Cyclone Genesis potential index (GPI) → accurate, but only at low res
 Often these are good for spatial correlation but bad for temporal one (difficulty in predicting inter-annual events)
 Solution is to use evolutionary algorithms to obtain Pareto Front of possible solutions (all possible optimal trade-offs between spatial and temporal optimality) → all solutions still have non acceptable temporal resolution.
 
-> Tropical storms are very rare, lots of samples where the event returns negative, only a small portion positive.
+``` admonish important
+Tropical storms are very rare, lots of samples where the event returns negative, only a small portion positive.
+```
 
 ## Physics
 
