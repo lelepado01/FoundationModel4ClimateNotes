@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Benchmarks - Foundation Model for Climate Notes</title>
+        <title>Liquid S4 - Foundation Model for Climate Notes</title>
 
 
         <!-- Custom HTML head -->
@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./mdbook-admonish.css">
 
         <!-- MathJax -->
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -85,7 +86,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="notes_for_talks.html"><strong aria-hidden="true">2.</strong> Notes for Talks</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="a_data_perspective.html"><strong aria-hidden="true">2.1.</strong> A Data-Oriented Perspective</a></li><li class="chapter-item expanded "><a href="ai4good.html"><strong aria-hidden="true">2.2.</strong> Ai for Good talk</a></li></ol></li><li class="chapter-item expanded "><a href="tropical_cyclones.html"><strong aria-hidden="true">3.</strong> Tropical Cyclones</a></li><li class="chapter-item expanded "><a href="ipcc.html"><strong aria-hidden="true">4.</strong> IPCC Reports</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ipcc_wg1.html"><strong aria-hidden="true">4.1.</strong> WG1</a></li><li class="chapter-item expanded "><a href="ipcc_wg2.html"><strong aria-hidden="true">4.2.</strong> WG2</a></li><li class="chapter-item expanded "><a href="ipcc_wg3.html"><strong aria-hidden="true">4.3.</strong> WG3</a></li><li class="chapter-item expanded "><a href="ipcc_ar6.html"><strong aria-hidden="true">4.4.</strong> AR6</a></li></ol></li><li class="chapter-item expanded "><a href="foundation_models.html"><strong aria-hidden="true">5.</strong> Models</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="gnns.html"><strong aria-hidden="true">5.1.</strong> GNNs</a></li><li class="chapter-item expanded "><a href="vits.html"><strong aria-hidden="true">5.2.</strong> ViTs</a></li><li class="chapter-item expanded "><a href="general_circulation_models.html"><strong aria-hidden="true">5.3.</strong> General Circulation Models</a></li><li class="chapter-item expanded "><a href="linear_transformers.html"><strong aria-hidden="true">5.4.</strong> Linear Transformers</a></li><li class="chapter-item expanded "><a href="structured_state_spaces.html"><strong aria-hidden="true">5.5.</strong> Structured State Spaces</a></li></ol></li><li class="chapter-item expanded "><a href="benchmarks.html" class="active"><strong aria-hidden="true">6.</strong> Benchmarks</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="climatelearn.html"><strong aria-hidden="true">6.1.</strong> ClimateLearn</a></li><li class="chapter-item expanded "><a href="climatebench.html"><strong aria-hidden="true">6.2.</strong> ClimateBench</a></li><li class="chapter-item expanded "><a href="weatherbench.html"><strong aria-hidden="true">6.3.</strong> WeatherBench</a></li></ol></li><li class="chapter-item expanded "><a href="papers.html"><strong aria-hidden="true">7.</strong> Papers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="climax.html"><strong aria-hidden="true">7.1.</strong> ClimaX</a></li><li class="chapter-item expanded "><a href="panguweather.html"><strong aria-hidden="true">7.2.</strong> PanguWeather</a></li><li class="chapter-item expanded "><a href="fuxi.html"><strong aria-hidden="true">7.3.</strong> FuXi</a></li><li class="chapter-item expanded "><a href="fourcastnet.html"><strong aria-hidden="true">7.4.</strong> FourcastNet</a></li><li class="chapter-item expanded "><a href="ace.html"><strong aria-hidden="true">7.5.</strong> ACE</a></li><li class="chapter-item expanded "><a href="expt.html"><strong aria-hidden="true">7.6.</strong> ExPT</a></li><li class="chapter-item expanded "><a href="maxvit.html"><strong aria-hidden="true">7.7.</strong> MaxViT</a></li><li class="chapter-item expanded "><a href="closed-form_continuous-time_neural_networks.html"><strong aria-hidden="true">7.8.</strong> Closed-form continuous-time neural networks</a></li><li class="chapter-item expanded "><a href="recurrent_fast_weight_programmers.html"><strong aria-hidden="true">7.9.</strong> Recurrent Fast Weight Programmers</a></li><li class="chapter-item expanded "><a href="liquid_neural_networks.html"><strong aria-hidden="true">7.10.</strong> Liquid Neural Networks</a></li><li class="chapter-item expanded "><a href="metnet.html"><strong aria-hidden="true">7.11.</strong> MetNet</a></li><li class="chapter-item expanded "><a href="spatio-temporal_swin-transformer.html"><strong aria-hidden="true">7.12.</strong> Spatio-Temporal Swin-Transformer</a></li><li class="chapter-item expanded "><a href="graphcast.html"><strong aria-hidden="true">7.13.</strong> GraphCast</a></li><li class="chapter-item expanded "><a href="linear_transformers_as_fwp.html"><strong aria-hidden="true">7.14.</strong> Linear Transformers as FWP</a></li><li class="chapter-item expanded "><a href="ai_cca.html"><strong aria-hidden="true">7.15.</strong> AI CCA</a></li></ol></li><li class="chapter-item expanded "><a href="development.html"><strong aria-hidden="true">8.</strong> Development</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="parallelization.html"><strong aria-hidden="true">8.1.</strong> Parallelization</a></li></ol></li><li class="chapter-item expanded "><a href="model_comparison.html"><strong aria-hidden="true">9.</strong> Model Comparison</a></li><li class="chapter-item expanded "><a href="challenges_and_opportunities.html"><strong aria-hidden="true">10.</strong> Challenges and Opportunities</a></li><li class="chapter-item expanded "><a href="improvements.html"><strong aria-hidden="true">11.</strong> FM4C Improvements</a></li><li class="chapter-item expanded "><a href="reference.html"><strong aria-hidden="true">12.</strong> References</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">IPCC Reports</li><li class="chapter-item expanded "><a href="ipcc_wg1.html"><strong aria-hidden="true">2.</strong> WG1</a></li><li class="chapter-item expanded "><a href="ipcc_wg2.html"><strong aria-hidden="true">3.</strong> WG2</a></li><li class="chapter-item expanded "><a href="ipcc_wg3.html"><strong aria-hidden="true">4.</strong> WG3</a></li><li class="chapter-item expanded "><a href="ipcc_ar6.html"><strong aria-hidden="true">5.</strong> AR6</a></li><li class="chapter-item expanded affix "><li class="part-title">Models</li><li class="chapter-item expanded "><a href="gnns.html"><strong aria-hidden="true">6.</strong> GNNs</a></li><li class="chapter-item expanded "><a href="vits.html"><strong aria-hidden="true">7.</strong> ViTs</a></li><li class="chapter-item expanded "><a href="general_circulation_models.html"><strong aria-hidden="true">8.</strong> General Circulation Models</a></li><li class="chapter-item expanded "><a href="linear_transformers.html"><strong aria-hidden="true">9.</strong> Linear Transformers</a></li><li class="chapter-item expanded "><a href="structured_state_spaces.html"><strong aria-hidden="true">10.</strong> Structured State Spaces</a></li><li class="chapter-item expanded affix "><li class="part-title">Papers</li><li class="chapter-item expanded "><a href="climax.html"><strong aria-hidden="true">11.</strong> ClimaX</a></li><li class="chapter-item expanded "><a href="panguweather.html"><strong aria-hidden="true">12.</strong> PanguWeather</a></li><li class="chapter-item expanded "><a href="fuxi.html"><strong aria-hidden="true">13.</strong> FuXi</a></li><li class="chapter-item expanded "><a href="fourcastnet.html"><strong aria-hidden="true">14.</strong> FourcastNet</a></li><li class="chapter-item expanded "><a href="ace.html"><strong aria-hidden="true">15.</strong> ACE</a></li><li class="chapter-item expanded "><a href="expt.html"><strong aria-hidden="true">16.</strong> ExPT</a></li><li class="chapter-item expanded "><a href="maxvit.html"><strong aria-hidden="true">17.</strong> MaxViT</a></li><li class="chapter-item expanded "><a href="closed-form_continuous-time_neural_networks.html"><strong aria-hidden="true">18.</strong> Closed-form continuous-time neural networks</a></li><li class="chapter-item expanded "><a href="recurrent_fast_weight_programmers.html"><strong aria-hidden="true">19.</strong> Recurrent Fast Weight Programmers</a></li><li class="chapter-item expanded "><a href="liquid_neural_networks.html"><strong aria-hidden="true">20.</strong> Liquid Neural Networks</a></li><li class="chapter-item expanded "><a href="metnet.html"><strong aria-hidden="true">21.</strong> MetNet</a></li><li class="chapter-item expanded "><a href="spatio-temporal_swin-transformer.html"><strong aria-hidden="true">22.</strong> Spatio-Temporal Swin-Transformer</a></li><li class="chapter-item expanded "><a href="graphcast.html"><strong aria-hidden="true">23.</strong> GraphCast</a></li><li class="chapter-item expanded "><a href="linear_transformers_as_fwp.html"><strong aria-hidden="true">24.</strong> Linear Transformers as FWP</a></li><li class="chapter-item expanded "><a href="ai_cca.html"><strong aria-hidden="true">25.</strong> AI CCA</a></li><li class="chapter-item expanded "><a href="liquid_s4.html" class="active"><strong aria-hidden="true">26.</strong> Liquid S4</a></li><li class="chapter-item expanded affix "><li class="part-title">Benchmarks</li><li class="chapter-item expanded "><a href="climatelearn.html"><strong aria-hidden="true">27.</strong> ClimateLearn</a></li><li class="chapter-item expanded "><a href="climatebench.html"><strong aria-hidden="true">28.</strong> ClimateBench</a></li><li class="chapter-item expanded "><a href="weatherbench.html"><strong aria-hidden="true">29.</strong> WeatherBench</a></li><li class="chapter-item expanded affix "><li class="part-title">Development</li><li class="chapter-item expanded "><a href="parallelization.html"><strong aria-hidden="true">30.</strong> Parallelization</a></li><li class="chapter-item expanded affix "><li class="part-title">Useful Stuff</li><li class="chapter-item expanded "><a href="notes_for_talks.html"><strong aria-hidden="true">31.</strong> Notes for Talks</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="a_data_perspective.html"><strong aria-hidden="true">31.1.</strong> A Data-Oriented Perspective</a></li><li class="chapter-item expanded "><a href="ai4good.html"><strong aria-hidden="true">31.2.</strong> Ai for Good talk</a></li></ol></li><li class="chapter-item expanded "><a href="tropical_cyclones.html"><strong aria-hidden="true">32.</strong> Tropical Cyclones</a></li><li class="chapter-item expanded "><a href="model_comparison.html"><strong aria-hidden="true">33.</strong> Model Comparison</a></li><li class="chapter-item expanded "><a href="challenges_and_opportunities.html"><strong aria-hidden="true">34.</strong> Challenges and Opportunities</a></li><li class="chapter-item expanded "><a href="improvements.html"><strong aria-hidden="true">35.</strong> FM4C Improvements</a></li><li class="chapter-item expanded affix "><li class="part-title">Footnotes</li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -123,7 +124,7 @@
                         <a href="https://github.com/lelepado01/FoundationModel4ClimateNotes/tree/main/" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/lelepado01/FoundationModel4ClimateNotes/edit/main/src/benchmarks.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/lelepado01/FoundationModel4ClimateNotes/edit/main/src/liquid_s4.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -152,18 +153,49 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="benchmarks"><a class="header" href="#benchmarks">Benchmarks</a></h1>
-<ul>
-<li><a href="./climatelearn.html">ClimateLearn</a></li>
-<li><a href="./climatebench.html">ClimateBench</a></li>
-<li><a href="./weatherbench.html">WeatherBench</a></li>
-</ul>
+                        <h1 id="liquid-structured-state-space-models"><a class="header" href="#liquid-structured-state-space-models">Liquid Structured State Space Models</a></h1>
+<blockquote>
+<p><a href="https://arxiv.org/abs/2209.12951">Paper</a> | <a href="https://github.com/raminmh/liquid-s4">Code</a> </p>
+</blockquote>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>Linear state space models have been used succesfully to learn representation of sequential data. </p>
+<p>In this approach, the structured state space model (S4) is combined with LTC space model to include the input dependant state-transition module. 
+The liquid kernel structure takes into account the similarity between samples in sequences at train and inference time. </p>
+<h2 id="continuous-time-state-space-model"><a class="header" href="#continuous-time-state-space-model">Continuous-time state space model</a></h2>
+<p>\( \hat{x}(t) = Ax(t) + Bu(t) \)
+\( y(t) = Cx(t) + Du(t) \)</p>
+<p>where \( u(t) \) is a 1d input signal, \( x(t) \) is the hidden state vector, \( y(t) \) is the output vector, and A, B, C, D are the system parameters.</p>
+<p>The previous model can then be discretized using the Euler method:</p>
+<p>\( x_k = \hat{A}x_{k-1} + \hat{B}u_{k} \)
+\( y_k = Cx_k \)</p>
+<p>where \( \Delta t \) is the time step, and D is equal to zero. </p>
+<p>And convolution can be applied to speed up the computation:</p>
+<p>\( x_0 = \hat{B}u_0, x_1 = \hat{AB}u_0 + \hat{B}u_1 \)
+\( y_0 = \hat{CB}u_0, y_1 = \hat{CAB}u_0 + \hat{CB}u_1 \)</p>
+<p>The equation can be formulated as a convolutional kernel, which can be solved with a Cauchy kernel computation pipeline. </p>
+<p>The liquid linearized version of LTC is: </p>
+<p>\( \frac{dx(t)}{dt} = - [ A + B \dot f(x(t), u(t), t, \theta) ] \dot x(t) + (\dots)\)</p>
+<p>where the term within square brackets is the LTC kernel. </p>
+<h2 id="structured-state-space-model--ltc-integration"><a class="header" href="#structured-state-space-model--ltc-integration">Structured state space model + LTC Integration</a></h2>
+<p>We can integrate the LTC kernel into the S4 model by using a coupled bi-linear taylor approximation of the former equations. </p>
+<p>\( \hat{x}(t) =[ A + Bu(t)] x(t) + Bu(t) \)
+\( y(t) = Cx(t) \)</p>
+<p>Then we can discretize the previous equations using the Euler method:</p>
+<p>\( x_k = \hat{A} + \hat{B}x_{k-1} + \hat{B}u_{k} \)
+\( y_k = \hat{C}x_k \)</p>
+<p>where \( \Delta t \) is the time step, and D is equal to zero.</p>
+<p>And convolution can be applied to speed up the computation:</p>
+<p>(other formulas)</p>
+<p>\( Y = \hat{K}u + K_{liquid} u_{correlations} \)</p>
+<p>How do we compute the liquid kernel efficiently?</p>
+<p>HIPPO matrix + NPLR representation + trainable B_n and P_n vectors. </p>
+<p>NPLR = low rank factorization \( \leftarrow \) diagonal + low rank matrices</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="structured_state_spaces.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="ai_cca.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
@@ -177,7 +209,7 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="structured_state_spaces.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="ai_cca.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 

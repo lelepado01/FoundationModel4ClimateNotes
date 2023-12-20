@@ -1,6 +1,6 @@
 # Summary
 
-[Introduction](./README.md)
+- [Introduction](./README.md)
 
 # IPCC Reports
 - [WG1](ipcc_wg1.md)
@@ -52,4 +52,4 @@
 
 # Footnotes
 
-[References](./reference.md)
+-[References](./reference.md)

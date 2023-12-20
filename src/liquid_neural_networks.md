@@ -18,7 +18,9 @@ Good for going out of distribution, so for real world applications (drone naviga
 
 Neural dynamics are continuous processes, so they can be described by differential equations.
 
+``` admonish note
 Synaptic release is more than just a scalar, and adds non-linearity to the system.
+```
 
 ## Liquid State Machines
 

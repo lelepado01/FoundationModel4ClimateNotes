@@ -54,7 +54,7 @@ And convolution can be applied to speed up the computation:
 
 (other formulas)
 
-\\( Y = \hat{K}u + \hat{K}_{liquid} u_{correlations} \\)
+\\( Y = \hat{K}u + K_{liquid} u_{correlations} \\)
 
 How do we compute the liquid kernel efficiently?
 

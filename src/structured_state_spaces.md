@@ -17,7 +17,7 @@ Much more efficient than Transformers, both computationally and memory wise.
 Also better at modelling long term dependencies.
 
 ``` admonish note
-    The new model proposed is essentially a new layer. 
+The new model proposed is essentially a new layer. 
 ```
 
 
@@ -65,7 +65,7 @@ A can be computed with the Hippo method, continuous time memorization (set of us
 
 
 ```admonish important
-   With discrete representation, the efficiency is on par with RNNs. This is the reason the frequency domain is used to apply convolutions, which allows for efficient parallelization.
+With discrete representation, the efficiency is on par with RNNs. This is the reason the frequency domain is used to apply convolutions, which allows for efficient parallelization.
 ```
 
 
