@@ -13,7 +13,7 @@ Widespread and rapid changes in the atmosphere, ocean, cryosphere and biosphere 
 
 Approximately 3.3 to 3.6 billion people live in contexts that are highly vulnerable to climate change. Human and ecosystem vulnerability are interdependent. Regions and people with considerable development constraints have high vulnerability to climatic hazards.
 
-``` admonish error
+``` admonish warning
     Impacts on some ecosystems are approaching irreversibility such as the impacts of hydrological changes resulting from the retreat of glaciers, or the changes in some mountain and Arctic ecosystems driven by permafrost thaw.  
 ```
 

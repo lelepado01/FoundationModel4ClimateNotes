@@ -12,7 +12,7 @@ Normally attention requires quadratic complexity, but this is reduced to linear 
 
 Given:
 
-\\( x \includes \math{R}^{H \times W \times C} \\)
+\\( x \in R^{H \times W \times C} \\)
 
 - Normal attention flattens the H and W dimensions into a single one. 
 - Block attention separates the token space into \\( < \frac{H}{P} \times \frac{W}{P}, P \times P, C > \\) non overlapping windows, each of \\( P \times P \\) size.

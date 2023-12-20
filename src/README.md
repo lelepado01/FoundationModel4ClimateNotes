@@ -31,7 +31,7 @@ Agile approach to research, with many small projects (POC), check up every 3-6 m
 - [ ] Look into surrogate models, which can be intergrated into larger projects together
 - [ ] Project: AI CCA cloud classification atlas 
 - [ ] Look into Temporal GNNs
-- [ ] Look into GNNs for climate
+- [x] Look into GNNs for climate
 - [x] Look at Neural GCM @ google
 - [x] Look at Neural General Circulation Models
 - [x] Look at Liquid neural networks

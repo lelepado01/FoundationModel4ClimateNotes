@@ -31,6 +31,7 @@
 - [GraphCast](./graphcast.md)
 - [Linear Transformers as FWP](./linear_transformers_as_fwp.md)
 - [AI CCA](./ai_cca.md)
+- [Liquid S4](./liquid_s4.md)
 
 # Benchmarks
 - [ClimateLearn](./climatelearn.md)
