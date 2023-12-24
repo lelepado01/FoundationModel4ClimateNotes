@@ -4,7 +4,7 @@
 
 Assessment Report (AR6) summarises the state of knowledge of climate change, its widespread impacts and risks, and climate change mitigation and adaptation. It integrates the main findings of the Sixth Assessment Report (AR6) based on contributions from the three Working Groups
 
-## A. Current Status and Trends
+## Current Status and Trends
 
 Human activities, principally through emissions of greenhouse gases, have unequivocally caused global warming, with global surface temperature reaching 1.1°C above 1850-1900 in 2011-2020. 
 The likely range of total human-caused global surface temperature increase from 1850–1900 to 2010–20197 is 0.8°C to 1.3°C, with a best estimate of 1.07°C. 
@@ -37,7 +37,7 @@ From 2010 to 2019 there have been sustained decreases in the unit costs of solar
 
 Policies implemented by the end of 2020 are projected to result in higher global GHG emissions in 2030 than emissions implied by NDCs, indicating an ‘implementation gap’. 
 
-### B. Future Climate Change, Risks, and Long-Term Responses
+## Future Climate Change, Risks, and Long-Term Responses
 
 Continued greenhouse gas emissions will lead to increasing global warming, with the best estimate of reaching 1.5°C in the near term in considered scenarios and modelled pathways. Every increment of global warming will intensify multiple and concurrent hazards. 
 
@@ -65,7 +65,7 @@ Limiting human-caused global warming requires net zero CO2 emissions. Cumulative
 
 If warming exceeds a specified level such as 1.5°C, it could gradually be reduced again by achieving and sustaining net negative global CO2 emissions. This would require additional deployment of carbon dioxide removal, compared to pathways without overshoot, leading to greater feasibility and sustainability concerns. Overshoot entails adverse impacts, some irreversible, and additional risks for human and natural systems, all growing with the magnitude and duration of overshoot. 
 
-### C. Responses in the Near Term
+## Responses in the Near Term
 
 There is a rapidly closing window of opportunity to secure a liveable and sustainable future for all. 
 increased international cooperation including improved access to adequate financial resources, particularly for vulnerable regions, sectors and groups, and inclusive governance and coordinated policies. 

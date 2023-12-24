@@ -1,6 +1,6 @@
 # IPCC Working Group 1
 
-## B: Observed and Projected Impacts and Risks
+## Observed and Projected Impacts and Risks
 
 Human-induced climate change, including more frequent and intense extreme events, has caused widespread adverse impacts and related losses and damages to nature and people, beyond natural climate variability. 
 Vulnerability of ecosystems and people to climate change differs substantially among and within regions driven by patterns of intersecting socioeconomic development, unsustainable ocean and land use, inequity, marginalization, historical and ongoing patterns of inequity such as colonialism, and governance. 

@@ -26,17 +26,14 @@ Agile approach to research, with many small projects (POC), check up every 3-6 m
 ### TODOs
 
 - [ ] Paper: The rise of data driven weather forecasts
-- [ ] Look at foundation models scaling laws
+- [x] Look at foundation models scaling laws
 - [ ] Is it possible to finetune for prediction of unseen variables?
 - [ ] Look into surrogate models, which can be intergrated into larger projects together
-- [ ] Project: AI CCA cloud classification atlas 
+- [x] Project: AI CCA cloud classification atlas 
 - [ ] Look into Temporal GNNs
 - [x] Look into GNNs for climate
 - [x] Look at Neural GCM @ google
 - [x] Look at Neural General Circulation Models
 - [x] Look at Liquid neural networks
 - [x] Look at Recurrent Fast Weight Programmers
-
-```admonish warning
-   A beautifully styled message.
-```
+- [ ] LLaMA (2023) Open and Efficient Foundation Language Models

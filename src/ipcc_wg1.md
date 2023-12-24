@@ -1,6 +1,6 @@
 # IPCC Working Group 1
 
-## A. The Current State of the Climate
+## The Current State of the Climate
 
 It is unequivocal that human influence has warmed the atmosphere, ocean and land. Widespread and rapid changes in the atmosphere, ocean, cryosphere and biosphere have occurred.
 
@@ -12,7 +12,7 @@ Human-induced climate change is already affecting many weather and climate extre
 
 Improved knowledge of climate processes, paleoclimate evidence and the response of the climate system to increasing radiative forcing gives a best estimate of equilibrium climate sensitivity of 3°C. 
 
-## B. Possible Climate Futures
+## Possible Climate Futures
 
 Global surface temperature will continue to increase until at least mid-century under all emissions scenarios considered. Global warming of 1.5°C and 2°C will be exceeded during the 21st century unless deep reductions in CO2 and other greenhouse gas emissions occur in the coming decades.
 

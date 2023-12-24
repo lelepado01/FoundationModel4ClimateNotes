@@ -23,6 +23,8 @@
 - [ACE](./ace.md)
 - [ExPT](./expt.md)
 - [MaxViT](./maxvit.md)
+- [Swin Transformer](./swin_transformer.md)
+- [Swin Transformer V2](./swin_transformer_v2.md)
 - [Closed-form continuous-time neural networks](./closed-form_continuous-time_neural_networks.md)
 - [Recurrent Fast Weight Programmers](./recurrent_fast_weight_programmers.md)
 - [Liquid Neural Networks](./liquid_neural_networks.md)
@@ -33,10 +35,15 @@
 - [AI CCA](./ai_cca.md)
 - [Liquid S4](./liquid_s4.md)
 
-# Benchmarks
+# Climate Benchmarks
+
 - [ClimateLearn](./climatelearn.md)
 - [ClimateBench](./climatebench.md)
 - [WeatherBench](./weatherbench.md)
+
+# Scaling Benchmarks
+- [Training LLMs on leadership‐class supercomputers](./training_llms_supercomp.md)
+- [Scaling Laws for LLMS](./scaling_laws_llms.md)
 
 # Development
 - [Parallelization](./parallelization.md)
