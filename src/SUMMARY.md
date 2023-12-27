@@ -44,6 +44,8 @@
 # Scaling Benchmarks
 - [Training LLMs on leadership‐class supercomputers](./training_llms_supercomp.md)
 - [Scaling Laws for LLMS](./scaling_laws_llms.md)
+- [Compute Optimal LLMs](./compute_optimal_llms.md)
+- [Data Optimal LLMs](./data_optimal_llms.md)
 
 # Development
 - [Parallelization](./parallelization.md)
