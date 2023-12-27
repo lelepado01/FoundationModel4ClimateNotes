@@ -24,7 +24,7 @@ Given a fixed FLOPs budget, how should we tradeoff model size N and training tok
 - Fix D and vary N (create 16 FLOPs curves (isoFLOPs))
 - Fitting a parametric loss function: model all losses as parametric functions of N and D
 
-\\( \hat{L}(N, D) = E + \frac{A}{N^{\alpha} + \frac{B}{N{\beta}}}\\)
+\\( \hat{L}(N, D) = E + \frac{A}{N^{\alpha}} + \frac{B}{N{\beta}}\\)
 
 where \\(E\\) is the entropy of natural text, the second term indicates how a transformer with N parameters still underperforms, and the third term is the finite number of optimization steps.
 
