@@ -13,7 +13,7 @@ site-url = "/notesBook/"
 git-repository-url = "https://github.com/lelepado01/FoundationModel4ClimateNotes/tree/main/"
 edit-url-template = "https://github.com/lelepado01/FoundationModel4ClimateNotes/edit/main/{path}"
 mathjax-support = true
-additional-css = ["./mdbook-admonish.css"]
+additional-css = ["./mdbook-admonish.css", "./theme/catppuccin.css", "./theme/catppuccin-admonish.css"]
 
 [output.html.search]
 limit-results = 20

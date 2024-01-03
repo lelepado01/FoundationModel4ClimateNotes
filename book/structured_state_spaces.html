@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -10,7 +10,7 @@
         
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -30,11 +30,13 @@
 
         <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href="./mdbook-admonish.css">
+        <link rel="stylesheet" href="./theme/catppuccin.css">
+        <link rel="stylesheet" href="./theme/catppuccin-admonish.css">
 
         <!-- MathJax -->
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -64,42 +66,69 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">IPCC Reports</li><li class="chapter-item expanded "><a href="ipcc_wg1.html"><strong aria-hidden="true">2.</strong> WG1</a></li><li class="chapter-item expanded "><a href="ipcc_wg2.html"><strong aria-hidden="true">3.</strong> WG2</a></li><li class="chapter-item expanded "><a href="ipcc_wg3.html"><strong aria-hidden="true">4.</strong> WG3</a></li><li class="chapter-item expanded "><a href="ipcc_ar6.html"><strong aria-hidden="true">5.</strong> AR6</a></li><li class="chapter-item expanded affix "><li class="part-title">Models</li><li class="chapter-item expanded "><a href="gnns.html"><strong aria-hidden="true">6.</strong> GNNs</a></li><li class="chapter-item expanded "><a href="vits.html"><strong aria-hidden="true">7.</strong> ViTs</a></li><li class="chapter-item expanded "><a href="general_circulation_models.html"><strong aria-hidden="true">8.</strong> General Circulation Models</a></li><li class="chapter-item expanded "><a href="linear_transformers.html"><strong aria-hidden="true">9.</strong> Linear Transformers</a></li><li class="chapter-item expanded "><a href="structured_state_spaces.html" class="active"><strong aria-hidden="true">10.</strong> Structured State Spaces</a></li><li class="chapter-item expanded affix "><li class="part-title">Papers</li><li class="chapter-item expanded "><a href="climax.html"><strong aria-hidden="true">11.</strong> ClimaX</a></li><li class="chapter-item expanded "><a href="panguweather.html"><strong aria-hidden="true">12.</strong> PanguWeather</a></li><li class="chapter-item expanded "><a href="fuxi.html"><strong aria-hidden="true">13.</strong> FuXi</a></li><li class="chapter-item expanded "><a href="fourcastnet.html"><strong aria-hidden="true">14.</strong> FourcastNet</a></li><li class="chapter-item expanded "><a href="ace.html"><strong aria-hidden="true">15.</strong> ACE</a></li><li class="chapter-item expanded "><a href="expt.html"><strong aria-hidden="true">16.</strong> ExPT</a></li><li class="chapter-item expanded "><a href="maxvit.html"><strong aria-hidden="true">17.</strong> MaxViT</a></li><li class="chapter-item expanded "><a href="swin_transformer.html"><strong aria-hidden="true">18.</strong> Swin Transformer</a></li><li class="chapter-item expanded "><a href="swin_transformer_v2.html"><strong aria-hidden="true">19.</strong> Swin Transformer V2</a></li><li class="chapter-item expanded "><a href="closed-form_continuous-time_neural_networks.html"><strong aria-hidden="true">20.</strong> Closed-form continuous-time neural networks</a></li><li class="chapter-item expanded "><a href="recurrent_fast_weight_programmers.html"><strong aria-hidden="true">21.</strong> Recurrent Fast Weight Programmers</a></li><li class="chapter-item expanded "><a href="liquid_neural_networks.html"><strong aria-hidden="true">22.</strong> Liquid Neural Networks</a></li><li class="chapter-item expanded "><a href="metnet.html"><strong aria-hidden="true">23.</strong> MetNet</a></li><li class="chapter-item expanded "><a href="spatio-temporal_swin-transformer.html"><strong aria-hidden="true">24.</strong> Spatio-Temporal Swin-Transformer</a></li><li class="chapter-item expanded "><a href="graphcast.html"><strong aria-hidden="true">25.</strong> GraphCast</a></li><li class="chapter-item expanded "><a href="linear_transformers_as_fwp.html"><strong aria-hidden="true">26.</strong> Linear Transformers as FWP</a></li><li class="chapter-item expanded "><a href="ai_cca.html"><strong aria-hidden="true">27.</strong> AI CCA</a></li><li class="chapter-item expanded "><a href="liquid_s4.html"><strong aria-hidden="true">28.</strong> Liquid S4</a></li><li class="chapter-item expanded affix "><li class="part-title">Climate Benchmarks</li><li class="chapter-item expanded "><a href="climatelearn.html"><strong aria-hidden="true">29.</strong> ClimateLearn</a></li><li class="chapter-item expanded "><a href="climatebench.html"><strong aria-hidden="true">30.</strong> ClimateBench</a></li><li class="chapter-item expanded "><a href="weatherbench.html"><strong aria-hidden="true">31.</strong> WeatherBench</a></li><li class="chapter-item expanded affix "><li class="part-title">Scaling Benchmarks</li><li class="chapter-item expanded "><a href="training_llms_supercomp.html"><strong aria-hidden="true">32.</strong> Training LLMs on leadership‐class supercomputers</a></li><li class="chapter-item expanded "><a href="scaling_laws_llms.html"><strong aria-hidden="true">33.</strong> Scaling Laws for LLMS</a></li><li class="chapter-item expanded affix "><li class="part-title">Development</li><li class="chapter-item expanded "><a href="parallelization.html"><strong aria-hidden="true">34.</strong> Parallelization</a></li><li class="chapter-item expanded affix "><li class="part-title">Useful Stuff</li><li class="chapter-item expanded "><a href="notes_for_talks.html"><strong aria-hidden="true">35.</strong> Notes for Talks</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="a_data_perspective.html"><strong aria-hidden="true">35.1.</strong> A Data-Oriented Perspective</a></li><li class="chapter-item expanded "><a href="ai4good.html"><strong aria-hidden="true">35.2.</strong> Ai for Good talk</a></li></ol></li><li class="chapter-item expanded "><a href="tropical_cyclones.html"><strong aria-hidden="true">36.</strong> Tropical Cyclones</a></li><li class="chapter-item expanded "><a href="model_comparison.html"><strong aria-hidden="true">37.</strong> Model Comparison</a></li><li class="chapter-item expanded "><a href="challenges_and_opportunities.html"><strong aria-hidden="true">38.</strong> Challenges and Opportunities</a></li><li class="chapter-item expanded "><a href="improvements.html"><strong aria-hidden="true">39.</strong> FM4C Improvements</a></li><li class="chapter-item expanded affix "><li class="part-title">Footnotes</li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">IPCC Reports</li><li class="chapter-item expanded "><a href="ipcc_wg1.html"><strong aria-hidden="true">2.</strong> WG1</a></li><li class="chapter-item expanded "><a href="ipcc_wg2.html"><strong aria-hidden="true">3.</strong> WG2</a></li><li class="chapter-item expanded "><a href="ipcc_wg3.html"><strong aria-hidden="true">4.</strong> WG3</a></li><li class="chapter-item expanded "><a href="ipcc_ar6.html"><strong aria-hidden="true">5.</strong> AR6</a></li><li class="chapter-item expanded affix "><li class="part-title">Models</li><li class="chapter-item expanded "><a href="gnns.html"><strong aria-hidden="true">6.</strong> GNNs</a></li><li class="chapter-item expanded "><a href="vits.html"><strong aria-hidden="true">7.</strong> ViTs</a></li><li class="chapter-item expanded "><a href="general_circulation_models.html"><strong aria-hidden="true">8.</strong> General Circulation Models</a></li><li class="chapter-item expanded "><a href="linear_transformers.html"><strong aria-hidden="true">9.</strong> Linear Transformers</a></li><li class="chapter-item expanded "><a href="structured_state_spaces.html" class="active"><strong aria-hidden="true">10.</strong> Structured State Spaces</a></li><li class="chapter-item expanded affix "><li class="part-title">Papers</li><li class="chapter-item expanded "><a href="climax.html"><strong aria-hidden="true">11.</strong> ClimaX</a></li><li class="chapter-item expanded "><a href="panguweather.html"><strong aria-hidden="true">12.</strong> PanguWeather</a></li><li class="chapter-item expanded "><a href="fuxi.html"><strong aria-hidden="true">13.</strong> FuXi</a></li><li class="chapter-item expanded "><a href="fourcastnet.html"><strong aria-hidden="true">14.</strong> FourcastNet</a></li><li class="chapter-item expanded "><a href="ace.html"><strong aria-hidden="true">15.</strong> ACE</a></li><li class="chapter-item expanded "><a href="expt.html"><strong aria-hidden="true">16.</strong> ExPT</a></li><li class="chapter-item expanded "><a href="maxvit.html"><strong aria-hidden="true">17.</strong> MaxViT</a></li><li class="chapter-item expanded "><a href="hieravit.html"><strong aria-hidden="true">18.</strong> HieraViT</a></li><li class="chapter-item expanded "><a href="swin_transformer.html"><strong aria-hidden="true">19.</strong> Swin Transformer</a></li><li class="chapter-item expanded "><a href="swin_transformer_v2.html"><strong aria-hidden="true">20.</strong> Swin Transformer V2</a></li><li class="chapter-item expanded "><a href="closed-form_continuous-time_neural_networks.html"><strong aria-hidden="true">21.</strong> Closed-form continuous-time neural networks</a></li><li class="chapter-item expanded "><a href="recurrent_fast_weight_programmers.html"><strong aria-hidden="true">22.</strong> Recurrent Fast Weight Programmers</a></li><li class="chapter-item expanded "><a href="liquid_neural_networks.html"><strong aria-hidden="true">23.</strong> Liquid Neural Networks</a></li><li class="chapter-item expanded "><a href="metnet.html"><strong aria-hidden="true">24.</strong> MetNet</a></li><li class="chapter-item expanded "><a href="spatio-temporal_swin-transformer.html"><strong aria-hidden="true">25.</strong> Spatio-Temporal Swin-Transformer</a></li><li class="chapter-item expanded "><a href="graphcast.html"><strong aria-hidden="true">26.</strong> GraphCast</a></li><li class="chapter-item expanded "><a href="linear_transformers_as_fwp.html"><strong aria-hidden="true">27.</strong> Linear Transformers as FWP</a></li><li class="chapter-item expanded "><a href="ai_cca.html"><strong aria-hidden="true">28.</strong> AI CCA</a></li><li class="chapter-item expanded "><a href="liquid_s4.html"><strong aria-hidden="true">29.</strong> Liquid S4</a></li><li class="chapter-item expanded affix "><li class="part-title">Climate Benchmarks</li><li class="chapter-item expanded "><a href="climatelearn.html"><strong aria-hidden="true">30.</strong> ClimateLearn</a></li><li class="chapter-item expanded "><a href="climatebench.html"><strong aria-hidden="true">31.</strong> ClimateBench</a></li><li class="chapter-item expanded "><a href="weatherbench.html"><strong aria-hidden="true">32.</strong> WeatherBench</a></li><li class="chapter-item expanded affix "><li class="part-title">Scaling Benchmarks</li><li class="chapter-item expanded "><a href="training_llms_supercomp.html"><strong aria-hidden="true">33.</strong> Training LLMs on leadership‐class supercomputers</a></li><li class="chapter-item expanded "><a href="scaling_laws_llms.html"><strong aria-hidden="true">34.</strong> Scaling Laws for LLMS</a></li><li class="chapter-item expanded "><a href="compute_optimal_llms.html"><strong aria-hidden="true">35.</strong> Compute Optimal LLMs</a></li><li class="chapter-item expanded "><a href="data_optimal_llms.html"><strong aria-hidden="true">36.</strong> Data Optimal LLMs</a></li><li class="chapter-item expanded affix "><li class="part-title">Development</li><li class="chapter-item expanded "><a href="parallelization.html"><strong aria-hidden="true">37.</strong> Parallelization</a></li><li class="chapter-item expanded affix "><li class="part-title">Useful Stuff</li><li class="chapter-item expanded "><a href="notes_for_talks.html"><strong aria-hidden="true">38.</strong> Notes for Talks</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="a_data_perspective.html"><strong aria-hidden="true">38.1.</strong> A Data-Oriented Perspective</a></li><li class="chapter-item expanded "><a href="ai4good.html"><strong aria-hidden="true">38.2.</strong> Ai for Good talk</a></li></ol></li><li class="chapter-item expanded "><a href="tropical_cyclones.html"><strong aria-hidden="true">39.</strong> Tropical Cyclones</a></li><li class="chapter-item expanded "><a href="model_comparison.html"><strong aria-hidden="true">40.</strong> Model Comparison</a></li><li class="chapter-item expanded "><a href="challenges_and_opportunities.html"><strong aria-hidden="true">41.</strong> Challenges and Opportunities</a></li><li class="chapter-item expanded "><a href="improvements.html"><strong aria-hidden="true">42.</strong> FM4C Improvements</a></li><li class="chapter-item expanded affix "><li class="part-title">Footnotes</li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -109,6 +138,10 @@
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="latte">Latte</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="frappe">Frappé</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="macchiato">Macchiato</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mocha">Mocha</button></li>
                         </ul>
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
@@ -229,7 +262,7 @@ It is also efficient, both in terms of memory and computation, and performs bett
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="climax.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="climax.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -243,7 +276,7 @@ It is also efficient, both in terms of memory and computation, and performs bett
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="climax.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="climax.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
