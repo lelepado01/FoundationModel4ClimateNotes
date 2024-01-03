@@ -23,6 +23,7 @@
 - [ACE](./ace.md)
 - [ExPT](./expt.md)
 - [MaxViT](./maxvit.md)
+- [HieraViT](./hieravit.md)
 - [Swin Transformer](./swin_transformer.md)
 - [Swin Transformer V2](./swin_transformer_v2.md)
 - [Closed-form continuous-time neural networks](./closed-form_continuous-time_neural_networks.md)

@@ -1,4 +1,4 @@
-# IPCC Working Group 1
+# IPCC Working Group 2
 
 ## Observed and Projected Impacts and Risks
 
