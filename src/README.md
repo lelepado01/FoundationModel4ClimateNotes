@@ -14,6 +14,22 @@ Agile approach to research, with many small projects (POC), check up every 3-6 m
     - Multi-modal forecaster using both climate and socio-economic data (ex. average income...)
  - [ ] Graph compression with GNNs, which can be used for data elaboration
 
+ - [ ] Wildfire prediction/forecasting (with geo)
+   - [ ] Drought prediction/forecasting (with geo) 
+   - [ ] add wind data and see expansion
+   - [ ] add temperature data and see expansion 
+   - [ ] terrain type (forest, grassland, desert, crops, etc.)
+      - could help type of crop decisions
+   US: (https://www.usgs.gov/news/data-release-combined-wildfire-datasets-united-states-and-certain-territories-1878-2019)
+ - [ ] Flood prediction/forecasting (with geo)
+   - [ ] Landslide prediction/forecasting (with geo)
+   - [ ] type of terrain (rock, sand, etc.)
+   - [ ] faglie
+ - [ ] Earthquake prediction/forecasting (with geo)
+   - [ ] Tsunami prediction/forecasting (with geo)
+   - [ ] Volcano prediction/forecasting (with geo)
+
+
 ### Useful Datasets
 
 - World Input-Output Database (WIOD)
@@ -23,17 +39,16 @@ Agile approach to research, with many small projects (POC), check up every 3-6 m
 - Global Burden of Disease (GBD)
 - Internal monetary fund (IMF)
 
-### TODOs
+### Conferences and Links
 
-- [ ] Paper: The rise of data driven weather forecasts
-- [x] Look at foundation models scaling laws
-- [ ] Is it possible to finetune for prediction of unseen variables?
-- [ ] Look into surrogate models, which can be intergrated into larger projects together
-- [x] Project: AI CCA cloud classification atlas 
-- [ ] Look into Temporal GNNs
-- [x] Look into GNNs for climate
-- [x] Look at Neural GCM @ google
-- [x] Look at Neural General Circulation Models
-- [x] Look at Liquid neural networks
-- [x] Look at Recurrent Fast Weight Programmers
-- [ ] LLaMA (2023) Open and Efficient Foundation Language Models
+https://www.climatechange.ai/events/iclr2024
+
+https://deepmind.google/discover/blog/using-ai-to-fight-climate-change/
+
+https://www.earthdata.nasa.gov/learn/pathfinders/wildfires-data-pathfinder/find-data#post-fire-impacts
+
+(ISI index for wildfires)
+https://gwis.jrc.ec.europa.eu/
+https://zenodo.org/records/3250949
+
+https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1642

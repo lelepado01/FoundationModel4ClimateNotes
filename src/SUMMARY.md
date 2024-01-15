@@ -33,6 +33,7 @@
 - [Spatio-Temporal Swin-Transformer](./spatio-temporal_swin-transformer.md)
 - [GraphCast](./graphcast.md)
 - [Linear Transformers as FWP](./linear_transformers_as_fwp.md)
+- [The Devil in Linear Transformers](./the_devil_in_linear_transformers.md)
 - [AI CCA](./ai_cca.md)
 - [Liquid S4](./liquid_s4.md)
 
