@@ -12,30 +12,35 @@
 - [GNNs](./gnns.md)
 - [ViTs](./vits.md)
 - [General Circulation Models](./general_circulation_models.md)
-- [Linear Transformers](./linear_transformers.md)
 - [Structured State Spaces](./structured_state_spaces.md)
 
-# Papers
-- [ClimaX](./climax.md)
-- [PanguWeather](./panguweather.md)
-- [FuXi](./fuxi.md)
-- [FourcastNet](./fourcastnet.md)
-- [ACE](./ace.md)
-- [ExPT](./expt.md)
+# Transformer Variants
 - [MaxViT](./maxvit.md)
 - [HieraViT](./hieravit.md)
 - [Swin Transformer](./swin_transformer.md)
 - [Swin Transformer V2](./swin_transformer_v2.md)
+- [Spatio-Temporal Swin-Transformer](./spatio-temporal_swin-transformer.md)
+- [Linear Transformers](./linear_transformers.md)
+- [Linear Transformers as FWP](./linear_transformers_as_fwp.md)
+- [The Devil in Linear Transformers](./the_devil_in_linear_transformers.md)
+
+# Weather Models
+- [ClimaX](./climax.md)
+- [PanguWeather](./panguweather.md)
+- [MetNet](./metnet.md)
+- [FuXi](./fuxi.md)
+- [FourcastNet](./fourcastnet.md)
+- [GraphCast](./graphcast.md)
+
+# Papers
+- [ACE](./ace.md)
+- [ExPT](./expt.md)
 - [Closed-form continuous-time neural networks](./closed-form_continuous-time_neural_networks.md)
 - [Recurrent Fast Weight Programmers](./recurrent_fast_weight_programmers.md)
 - [Liquid Neural Networks](./liquid_neural_networks.md)
-- [MetNet](./metnet.md)
-- [Spatio-Temporal Swin-Transformer](./spatio-temporal_swin-transformer.md)
-- [GraphCast](./graphcast.md)
-- [Linear Transformers as FWP](./linear_transformers_as_fwp.md)
-- [The Devil in Linear Transformers](./the_devil_in_linear_transformers.md)
-- [AI CCA](./ai_cca.md)
 - [Liquid S4](./liquid_s4.md)
+- [AI CCA](./ai_cca.md)
+- [FireCast](./firecast.md)
 
 # Climate Benchmarks
 
