@@ -13,21 +13,20 @@ Agile approach to research, with many small projects (POC), check up every 3-6 m
  - [ ] Tool for socio-economic decision making with climate data (IPCC report)
     - Multi-modal forecaster using both climate and socio-economic data (ex. average income...)
  - [ ] Graph compression with GNNs, which can be used for data elaboration
-
  - [ ] Wildfire prediction/forecasting (with geo)
-   - [ ] Drought prediction/forecasting (with geo) 
-   - [ ] add wind data and see expansion
-   - [ ] add temperature data and see expansion 
-   - [ ] terrain type (forest, grassland, desert, crops, etc.)
+    - Drought prediction/forecasting (with geo) 
+    - add wind data and see expansion
+    - add temperature data and see expansion 
+    - terrain type (forest, grassland, desert, crops, etc.)
       - could help type of crop decisions
-   US: (https://www.usgs.gov/news/data-release-combined-wildfire-datasets-united-states-and-certain-territories-1878-2019)
+    - US: (https://www.usgs.gov/news/data-release-combined-wildfire-datasets-united-states-and-certain-territories-1878-2019)
  - [ ] Flood prediction/forecasting (with geo)
-   - [ ] Landslide prediction/forecasting (with geo)
-   - [ ] type of terrain (rock, sand, etc.)
-   - [ ] faglie
+    - Landslide prediction/forecasting (with geo)
+    - type of terrain (rock, sand, etc.)
+    - faglie
  - [ ] Earthquake prediction/forecasting (with geo)
-   - [ ] Tsunami prediction/forecasting (with geo)
-   - [ ] Volcano prediction/forecasting (with geo)
+    - Tsunami prediction/forecasting (with geo)
+    - Volcano prediction/forecasting (with geo)
 
 
 ### Useful Datasets

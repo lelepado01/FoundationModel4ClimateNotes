@@ -1,4 +1,3 @@
 # Notes on Foundation models for climate 
 
-Book at: 
-https://lelepado01.github.io/FoundationModel4ClimateNotes/
+My notes for research on foundation models for climate and phd topics.

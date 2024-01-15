@@ -13,7 +13,7 @@ The idea is to used vanilla attention, which is more accurate and causes less di
 - Diagonal attentin is used for the early stages of the network, to address dilution;
 - Norm attention is used in later stages, to stabilize training gradients. 
 
-![transnormer](./images/devil_linformer_1.png)
+![transnormer](./imgs/devil_linformer_1.png)
 
 Can we just remove scaling from linear attention? No, because it would cause a drop in accuracy (ppl). 
 The cause is that the attention map becomes unbounded in the forward pass. We want to bound attention map in forward, as well as gradients in backward pass. 
@@ -27,7 +27,7 @@ where \\( X_{norm} \\) is a normalization layer.
 
 Diagonal attention on the other hand is created by leveraging a non-overlapping blocks strategy for the attention distribution. This reduces time complexity as attention is calculated inside each block.
 
-![transnormer](./images/devil_linformer_2.png)
+![transnormer](./imgs/devil_linformer_2.png)
 
 Complexity is given by:
 

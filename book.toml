@@ -3,7 +3,7 @@ authors = ["gabriele padovani"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Foundation Model for Climate Notes"
+title = "Foundation Model 4 Climate Notes"
 
 [rust]
 edition = "2021"
