@@ -25,6 +25,7 @@
 - [The Devil in Linear Transformers](./the_devil_in_linear_transformers.md)
 
 # Weather Models
+- [Rise of Data-Driven Weather Forecasting](./rise_of_data-driven_weather_forecasting.md)
 - [ClimaX](./climax.md)
 - [PanguWeather](./panguweather.md)
 - [MetNet](./metnet.md)
@@ -41,6 +42,7 @@
 - [Liquid S4](./liquid_s4.md)
 - [AI CCA](./ai_cca.md)
 - [FireCast](./firecast.md)
+- [FarSite](./farsite.md)
 
 # Climate Benchmarks
 
@@ -65,6 +67,10 @@
 - [Model Comparison](./model_comparison.md)
 - [Challenges and Opportunities](./challenges_and_opportunities.md)
 - [FM4C Improvements](./improvements.md)
+
+# Ideas
+
+- [Fire behavior](./fire_behavior.md)
 
 # Footnotes
 

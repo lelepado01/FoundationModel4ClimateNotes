@@ -43,11 +43,3 @@ Agile approach to research, with many small projects (POC), check up every 3-6 m
 https://www.climatechange.ai/events/iclr2024
 
 https://deepmind.google/discover/blog/using-ai-to-fight-climate-change/
-
-https://www.earthdata.nasa.gov/learn/pathfinders/wildfires-data-pathfinder/find-data#post-fire-impacts
-
-(ISI index for wildfires)
-https://gwis.jrc.ec.europa.eu/
-https://zenodo.org/records/3250949
-
-https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1642
