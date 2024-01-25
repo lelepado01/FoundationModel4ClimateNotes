@@ -2,12 +2,6 @@
 
 - [Introduction](./README.md)
 
-# IPCC Reports
-- [WG1](ipcc_wg1.md)
-- [WG2](ipcc_wg2.md)
-- [WG3](ipcc_wg3.md)
-- [AR6](ipcc_ar6.md)
-
 # Models
 - [GNNs](./gnns.md)
 - [ViTs](./vits.md)
@@ -32,6 +26,12 @@
 - [FuXi](./fuxi.md)
 - [FourcastNet](./fourcastnet.md)
 - [GraphCast](./graphcast.md)
+
+# IPCC Reports
+- [WG1](ipcc_wg1.md)
+- [WG2](ipcc_wg2.md)
+- [WG3](ipcc_wg3.md)
+- [AR6](ipcc_ar6.md)
 
 # Papers
 - [ACE](./ace.md)
@@ -59,6 +59,11 @@
 # Development
 - [Parallelization](./parallelization.md)
 
+# Boring AI
+- [Trustworthy AI](./trustworthy_ai.md)
+- [Provenance Documentation for AI](./provenance_documentation_for_ai.md)
+- [Information Required for XAI](./information_required_for_xai.md)
+
 # Useful Stuff
 - [Notes for Talks](./notes_for_talks.md)
     - [A Data-Oriented Perspective](./a_data_perspective.md)
@@ -71,6 +76,7 @@
 # Ideas
 
 - [Fire behavior](./fire_behavior.md)
+- [ML for Climate](./ml_for_climate.md)
 
 # Footnotes
 
