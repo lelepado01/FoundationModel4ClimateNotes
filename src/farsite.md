@@ -17,3 +17,10 @@ Can be expanded to include additional models, such as BURNUP model for fuel cons
 FarSite propagates the edge as an elliptical wavelet, where the wave shape is calculated as combination (additive) of wind speed and slope. 
 
 Fire growth is the aggregate movement of all vertices along the fire edge during a timestep.
+
+## Evaluation of FarSite in the Mediterranean Regions
+
+Analysis of how relable this tech is when using fuel and weather models from a different geographical area.
+
+All simulations estimated burn areas that were within p-value of the actual burn area. Accuracy still is better with a custom fuel model.
+Accuracy is influenced strongly by the resolution of the wind direction and strength data.

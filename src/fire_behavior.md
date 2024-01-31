@@ -2,12 +2,12 @@
 
 ## Variables
 
-- [x] Ground truths: GeoMAC fire database
-- [x] Weather data: NOAA
-- [ ] Satellite visual imagery: ASK VAL (visual imagery)
-- [ ] Digital elevation model: ASK VAL (heightmap)
-- [x] Fuel data: CBD landfire data (fuel type)
-- [x] Land Cover: C-CAP (type of ground)
+- [x] Ground truths: GeoMAC fire database                               (ALL WORLD)     ()
+- [x] Weather data: NOAA                                                (ALL WORLD)     ()
+- [ ] Satellite visual imagery: ASK VAL                                 (BOH)           ()
+- [x] Digital elevation model: ASK VAL (heightmap) (or also found)      (BOH)           (cropped)
+- [x] Fuel data: CBD landfire data (fuel type)                          (USA)           (cropped)
+- [x] Land Cover: C-CAP (type of ground)                                (USA)           (cropped)
 
 ## Data 
 

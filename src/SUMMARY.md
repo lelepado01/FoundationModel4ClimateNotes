@@ -63,6 +63,9 @@
 - [Trustworthy AI](./trustworthy_ai.md)
 - [Provenance Documentation for AI](./provenance_documentation_for_ai.md)
 - [Information Required for XAI](./information_required_for_xai.md)
+- [Explainable AI Techniques](./explainable_ai_techniques.md)
+- [Provenance](./provenance.md)
+- [PROV-JSON](./prov-json.md)
 
 # Useful Stuff
 - [Notes for Talks](./notes_for_talks.md)
