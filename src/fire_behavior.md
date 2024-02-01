@@ -50,6 +50,13 @@ Near real time
 
 LANDFIRE's (LF) Forest Canopy Bulk Density (CBD) describes the density of available canopy fuel in a stand. It is defined as the mass of available canopy fuel per canopy volume unit. 
 
+**DEM**
+
+[Copernicus](https://portal.opentopography.org/raster?opentopoID=OTSDEM.032021.4326.3)
+
+30m resolution
+
+
 ## MODIS
 
 > [Modis Collection](https://lance.modaps.eosdis.nasa.gov/data_products/)

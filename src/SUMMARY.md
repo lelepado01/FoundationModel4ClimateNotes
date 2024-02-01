@@ -65,6 +65,8 @@
 - [Information Required for XAI](./information_required_for_xai.md)
 - [Explainable AI Techniques](./explainable_ai_techniques.md)
 - [Provenance](./provenance.md)
+- [PROV Notation](./prov-notation.md)
+- [PROV Constraints](./prov-constraints.md)
 - [PROV-JSON](./prov-json.md)
 
 # Useful Stuff
