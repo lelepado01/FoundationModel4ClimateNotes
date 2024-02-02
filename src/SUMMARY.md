@@ -27,11 +27,17 @@
 - [FourcastNet](./fourcastnet.md)
 - [GraphCast](./graphcast.md)
 
-# IPCC Reports
-- [WG1](ipcc_wg1.md)
-- [WG2](ipcc_wg2.md)
-- [WG3](ipcc_wg3.md)
-- [AR6](ipcc_ar6.md)
+    # Climate Benchmarks
+    - [ClimateLearn](./climatelearn.md)
+    - [ClimateBench](./climatebench.md)
+    - [WeatherBench](./weatherbench.md)
+
+
+    # IPCC Reports
+    - [WG1](ipcc_wg1.md)
+    - [WG2](ipcc_wg2.md)
+    - [WG3](ipcc_wg3.md)
+    - [AR6](ipcc_ar6.md)
 
 # Papers
 - [ACE](./ace.md)
@@ -43,12 +49,6 @@
 - [AI CCA](./ai_cca.md)
 - [FireCast](./firecast.md)
 - [FarSite](./farsite.md)
-
-# Climate Benchmarks
-
-- [ClimateLearn](./climatelearn.md)
-- [ClimateBench](./climatebench.md)
-- [WeatherBench](./weatherbench.md)
 
 # Scaling Benchmarks
 - [Training LLMs on leadership‐class supercomputers](./training_llms_supercomp.md)
@@ -68,6 +68,7 @@
 - [PROV Notation](./prov-notation.md)
 - [PROV Constraints](./prov-constraints.md)
 - [PROV-JSON](./prov-json.md)
+- [Advances, Challenges, and Opportunities in TAI](./advances_challenges_opportunities_tai.md)
 
 # Useful Stuff
 - [Notes for Talks](./notes_for_talks.md)

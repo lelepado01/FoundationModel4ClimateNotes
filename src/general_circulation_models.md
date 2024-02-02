@@ -1,6 +1,5 @@
 # General Circulation Models
 
-
 ## Introduction
 
 General Circulation Models (GCMs) are a class of models which use a combination of numerical solvers and tuned representations for small scale processes. 
