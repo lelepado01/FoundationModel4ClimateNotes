@@ -27,13 +27,12 @@
 - [FourcastNet](./fourcastnet.md)
 - [GraphCast](./graphcast.md)
 
-    # Climate Benchmarks
+- [Climate Benchmarks]()
     - [ClimateLearn](./climatelearn.md)
     - [ClimateBench](./climatebench.md)
     - [WeatherBench](./weatherbench.md)
 
-
-    # IPCC Reports
+- [IPCC Reports]()
     - [WG1](ipcc_wg1.md)
     - [WG2](ipcc_wg2.md)
     - [WG3](ipcc_wg3.md)
@@ -65,9 +64,9 @@
 - [Information Required for XAI](./information_required_for_xai.md)
 - [Explainable AI Techniques](./explainable_ai_techniques.md)
 - [Provenance](./provenance.md)
-- [PROV Notation](./prov-notation.md)
-- [PROV Constraints](./prov-constraints.md)
-- [PROV-JSON](./prov-json.md)
+    - [PROV Notation](./prov-notation.md)
+    - [PROV Constraints](./prov-constraints.md)
+    - [PROV-JSON](./prov-json.md)
 - [Advances, Challenges, and Opportunities in TAI](./advances_challenges_opportunities_tai.md)
 
 # Useful Stuff
