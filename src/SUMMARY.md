@@ -69,7 +69,10 @@
     - [PROV Constraints](./prov-constraints.md)
     - [PROV-JSON](./prov-json.md)
     - [A Graph Model for Data Provenance](./a_graph_model_for_data_provenance.md)
+- [Provenance Supporting Hyperparameter Analysis in DNNs](./provenance_supporting_hyperparameter_analysis_in_dnns.md)
+- [FAIR Guiding Principles](./fair_guiding_principles.md)
 - [Advances, Challenges, and Opportunities in TAI](./advances_challenges_opportunities_tai.md)
+- [MLFlow2PROV](./mlflow2prov.md)
 
 # Useful Stuff
 - [Notes for Talks](./notes_for_talks.md)
