@@ -48,6 +48,8 @@
 - [AI CCA](./ai_cca.md)
 - [FireCast](./firecast.md)
 - [FarSite](./farsite.md)
+- [Wildfire risk modeling](./wildfire_risk_modeling.md)
+- [XAI wildfire in the Mediterranean countries](./xai_wildfire_in_the_mediterranean_countries.md)
 
 # Scaling Benchmarks
 - [Training LLMs on leadership‐class supercomputers](./training_llms_supercomp.md)
@@ -59,6 +61,7 @@
 - [Parallelization](./parallelization.md)
 
 # Boring AI
+- [Data Quality](./data_quality.md)
 - [Trustworthy AI](./trustworthy_ai.md)
 - [Provenance Documentation for AI](./provenance_documentation_for_ai.md)
 - [Information Required for XAI](./information_required_for_xai.md)
@@ -73,6 +76,7 @@
 - [FAIR Guiding Principles](./fair_guiding_principles.md)
 - [Advances, Challenges, and Opportunities in TAI](./advances_challenges_opportunities_tai.md)
 - [MLFlow2PROV](./mlflow2prov.md)
+- [Linking PROV and XAI in distributed ML](./linking_prov_xai_distrib_ml.md)
 
 # Useful Stuff
 - [Notes for Talks](./notes_for_talks.md)
