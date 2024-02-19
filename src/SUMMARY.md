@@ -2,6 +2,11 @@
 
 - [Introduction](./README.md)
 
+# Research Methodologies
+- [Course](./course_rm.md)
+- [Seminar 1](./seminar_rm_1.md)
+- [Seminar 2](./seminar_rm_2.md)
+
 # Models
 - [GNNs](./gnns.md)
 - [ViTs](./vits.md)
@@ -77,6 +82,8 @@
 - [Advances, Challenges, and Opportunities in TAI](./advances_challenges_opportunities_tai.md)
 - [MLFlow2PROV](./mlflow2prov.md)
 - [Linking PROV and XAI in distributed ML](./linking_prov_xai_distrib_ml.md)
+- [Prov supporting Hyperparameter Analysis in DNNs](./prov_supporting_hyperparameter_analysis_in_dnns.md)
+- [Data Provenance for Distributed ML](./data_provenance_distrib_ml.md)
 
 # Useful Stuff
 - [Notes for Talks](./notes_for_talks.md)
