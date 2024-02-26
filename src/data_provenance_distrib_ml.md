@@ -1,5 +1,7 @@
 # Data Provenance in Distributed Machine Learning
 
+> [Paper](https://link.springer.com/chapter/10.1007/978-3-030-41418-4_19) | No Code?
+
 **Data Delineation**: crucial aspect of distributed machine learning.
 
 **Data Lineage**: considers what data is missing, who uses it and what happens (is it modified, updated...). 
@@ -16,8 +18,11 @@ The pipeline monitors user input, collects information and handles data storage.
 
 To train the model, Stellargraph is used: reads the generated data logs from RDD and PySpark. (and gives resulting logs)
 
-Competitors are **Akka** and **Orleans** (less support for data recovery). 
-
 This work tests the trustworthiness of pipeline before training the model.
 
 Keeps overhead under 20% and is able to handle 1000s of data logs. But is higher on compelx queries.
+
+Uses ElasticSearch (paid product) and is not open source. Stellargraph is free and open source, but is not the main focus of the paper and needs provenance retrieval.
+Competitors are **Akka** (I think?)  and **Orleans** (couldn't find anything online) (less support for data recovery). 
+
+This tool also has no code available I could find...
