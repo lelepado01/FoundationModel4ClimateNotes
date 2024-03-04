@@ -19,9 +19,13 @@
 - [Swin Transformer](./swin_transformer.md)
 - [Swin Transformer V2](./swin_transformer_v2.md)
 - [Spatio-Temporal Swin-Transformer](./spatio-temporal_swin-transformer.md)
-- [Linear Transformers](./linear_transformers.md)
-- [Linear Transformers as FWP](./linear_transformers_as_fwp.md)
-- [The Devil in Linear Transformers](./the_devil_in_linear_transformers.md)
+- [Efficient Transformers]()
+    - [Linear Transformers](./linear_transformers.md)
+    - [Linear Transformers as FWP](./linear_transformers_as_fwp.md)
+    - [The Devil in Linear Transformers](./the_devil_in_linear_transformers.md)
+    - [Performer](./performer.md)
+    - [SRFormer](./srformer.md)
+    - [Multiscaled stacked ViT](./multiscaled_stacked_vit.md)
 
 # Weather Models
 - [Rise of Data-Driven Weather Forecasting](./rise_of_data-driven_weather_forecasting.md)
@@ -87,6 +91,9 @@
     - [Linking PROV and XAI in distributed ML](./linking_prov_xai_distrib_ml.md)
     - [MLFlow2PROV](./mlflow2prov.md)
     - [LIMA](./lima.md) 
+    - [ProvLake](./provlake.md)
+    - [Efficient runtime capture of multiworkflow data using prov](./efficient_runtime_capture_multiworkflow_data_prov.md)
+    - [PrIU](./priu.md) 
 
 # Useful Stuff
 - [Notes for Talks](./notes_for_talks.md)
