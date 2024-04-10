@@ -6,6 +6,11 @@
 - [Course](./course_rm.md)
 - [Seminar 1](./seminar_rm_1.md)
 - [Seminar 2](./seminar_rm_2.md)
+- [Extras](./research_methodologies_extras.md)
+
+# Academic Writing
+- [Initial Notes](aw_initial_notes.md)
+- [Lesson 1](aw_lesson_1.md)
 
 # Models
 - [GNNs](./gnns.md)
