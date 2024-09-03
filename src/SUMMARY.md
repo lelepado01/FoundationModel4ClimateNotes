@@ -8,10 +8,6 @@
 - [Seminar 2](./seminar_rm_2.md)
 - [Extras](./research_methodologies_extras.md)
 
-# Academic Writing
-- [Initial Notes](aw_initial_notes.md)
-- [Lesson 1](aw_lesson_1.md)
-
 # Models
 - [GNNs](./gnns.md)
 - [ViTs](./vits.md)
@@ -99,6 +95,15 @@
     - [ProvLake](./provlake.md)
     - [Efficient runtime capture of multiworkflow data using prov](./efficient_runtime_capture_multiworkflow_data_prov.md)
     - [PrIU](./priu.md) 
+    - [Provenance for Responsible AI Systems](./prov_for_resp_ais.md)
+    - [Provenance Documentation for XAI](./prov_documentation_for_xai.md)
+        - [Data Provenance Initiative](./data_provenance_initiative.md)
+
+# Energy Efficiency
+- [Metrics](./ee_metrics.md)        
+- [CarbonLLM](./carbonllm.md)
+- [HVAC](./hvac.md)
+- [Test time training](./test_time_training.md)
 
 # Useful Stuff
 - [Notes for Talks](./notes_for_talks.md)
@@ -110,10 +115,10 @@
 - [FM4C Improvements](./improvements.md)
 
 # Ideas
-
 - [Fire behavior](./fire_behavior.md)
 - [ML for Climate](./ml_for_climate.md)
+- [Incremental Models](./incremental_models.md)
+- [Scaling Issues](./scaling_issues.md)
 
 # Footnotes
-
 -[References](./reference.md)
