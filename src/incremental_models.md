@@ -14,7 +14,7 @@ From the observation of layers:
 - Attention distribution on shallow layers is more uniform across different positions and layers. Distribution in shallow layers focuses on neighboring tokens + the starting token.
 - Attention distribution in deep layers is similar to the distribution of shallow layers (knowledge can be shared).  
 
-![Layer Stacking](../imgs/incremental_models_attn_fig_1.png)
+![Layer Stacking](../src/imgs/incremental_models_attn_fig_1.png)
 
 Layer stacking implies copying weights in new layers from the previous layers. This is a way to increase the depth, with an additional warm start.
 At specific iterations the model doubles in size.
@@ -29,7 +29,7 @@ Layer dropping involves the random removal of layers from a neural network durin
 
 RHO-LOSS (Reducible Holdout Loss Selection) is a technique introduced to accelerate the training of deep learning models by selecting the most useful data points for training. Instead of training the model on all data points uniformly, RHO-LOSS selects the points that are most likely to reduce the generalisation loss of the model.
 
-![RHO](../imgs/incremental_models_rho_1.png)
+![RHO](../src/imgs/incremental_models_rho_1.png)
 
 RHO-LOSS offers several advantages, including:
 - Accelerated training: it can significantly reduce the number of training steps required to achieve a given accuracy, as demonstrated by experiments on various datasets, including the large dataset of web-scraped Clothing-1M images
