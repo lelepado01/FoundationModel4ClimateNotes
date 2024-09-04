@@ -8,6 +8,31 @@ Growing LSTMs is a technique used to accelerate the training of deep learning mo
 - **Cascade**: weights which come from an existing block are copied to the new block.
 - **Fully Connected**: all hidden weights are modified. 
 
+#### Nest
+
+Gradient based growing: 
+- connection growth: greedily activates dormant connections (add connection only if the loss is reduced)
+- neuron growth: connection estabilishment + weight initialization. Add neuron between Node i and j if correlation pre-synaptic and post-synaptic is high.
+
+Magnitude based pruning: remove connections if magn(W) is less than a threshold T.
+
+Partial Area convolutions: convolve only the area of interest, not the whole image. (CNNs are computationally expensive)
+
+#### Learn Weights and Connections
+
+Also does pruning, learns which connections are important, then prune weights. Converts dense net into a sparse one.
+
+#### Grow and Prune LSTMs
+
+Based on the H-LSTM cell (Hidden layer LSTM). The difference comes from the weight update vector, which is replaced by 4 DNNs with multi-layer transformations. This gives more control, easy regularization and flexible gates. 
+
+Process: 
+- initialize the H-LSTM cell with a single layer LSTM
+- grow the H-LSTM cell by adding a new layer + training the model
+- activation function + more training
+- pruning of connections + training
+- final model
+
 #### Layer Stacking
 
 From the observation of layers: 
