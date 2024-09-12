@@ -98,12 +98,21 @@
     - [Provenance for Responsible AI Systems](./prov_for_resp_ais.md)
     - [Provenance Documentation for XAI](./prov_documentation_for_xai.md)
         - [Data Provenance Initiative](./data_provenance_initiative.md)
+- [RO-Crate](./ro-crate.md)
+- [Workflow Run ROC](./workflow_run_roc.md)
+- [Collecting Managing and Analyzing Provenance Data](./collecting_managing_analyzing_provenance_data.md)
 
 # Energy Efficiency
 - [Metrics](./ee_metrics.md)        
 - [CarbonLLM](./carbonllm.md)
 - [HVAC](./hvac.md)
 - [Test time training](./test_time_training.md)
+
+# Growing Models
+- [LSTMVis](./lstmvis.md)
+- [H-State and Semantic Structure](./h-state_and_semantic_structure.md)
+- [Hidden Memories of RNNs](./hidden_memories_of_rnns.md)
+- [Analysis of Entropy in Hidden States](./analysis_of_entropy_in_hidden_states.md)
 
 # Useful Stuff
 - [Notes for Talks](./notes_for_talks.md)

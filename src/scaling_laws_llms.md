@@ -1,5 +1,7 @@
 # Scaling Laws for Large Language Models
 
+> [Paper](https://arxiv.org/abs/2001.08361)
+
 ## Introduction
 
 Analysis of cross entropy loss for LLMs. It scales as power law with regards to model size N, dataset size D, and amount of computation for training C. 
