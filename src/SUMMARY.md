@@ -20,13 +20,16 @@
 - [Swin Transformer](./swin_transformer.md)
 - [Swin Transformer V2](./swin_transformer_v2.md)
 - [Spatio-Temporal Swin-Transformer](./spatio-temporal_swin-transformer.md)
+- [Multiscaled stacked ViT](./multiscaled_stacked_vit.md)
 - [Efficient Transformers]()
     - [Linear Transformers](./linear_transformers.md)
     - [Linear Transformers as FWP](./linear_transformers_as_fwp.md)
     - [The Devil in Linear Transformers](./the_devil_in_linear_transformers.md)
     - [Performer](./performer.md)
     - [SRFormer](./srformer.md)
-    - [Multiscaled stacked ViT](./multiscaled_stacked_vit.md)
+- [Test time training](./test_time_training.md)
+- [TTT++](./ttt++.md)
+- [Universal Transformers](./universal_transformers.md)
 
 # Weather Models
 - [Rise of Data-Driven Weather Forecasting](./rise_of_data-driven_weather_forecasting.md)
@@ -36,6 +39,7 @@
 - [FuXi](./fuxi.md)
 - [FourcastNet](./fourcastnet.md)
 - [GraphCast](./graphcast.md)
+- [PrithViWxC](./prithviwxc.md)
 
 - [Climate Benchmarks]()
     - [ClimateLearn](./climatelearn.md)
@@ -48,7 +52,7 @@
     - [WG3](ipcc_wg3.md)
     - [AR6](ipcc_ar6.md)
 
-# Papers
+# Misc and Domain Specific Models
 - [ACE](./ace.md)
 - [ExPT](./expt.md)
 - [Closed-form continuous-time neural networks](./closed-form_continuous-time_neural_networks.md)
@@ -106,7 +110,7 @@
 - [Metrics](./ee_metrics.md)        
 - [CarbonLLM](./carbonllm.md)
 - [HVAC](./hvac.md)
-- [Test time training](./test_time_training.md)
+- [Computational/Energy Use of CMIP6](./computational_energy_use_of_cmip6.md)
 
 # Growing Models
 - [LSTMVis](./lstmvis.md)
