@@ -111,6 +111,8 @@
 - [CarbonLLM](./carbonllm.md)
 - [HVAC](./hvac.md)
 - [Computational/Energy Use of CMIP6](./computational_energy_use_of_cmip6.md)
+- [Energy Intensity of Internet Data Transmission](./energy_intensity_of_internet_data_transmission.md)
+- [Green AI](./green_ai.md)
 
 # Growing Models
 - [LSTMVis](./lstmvis.md)
