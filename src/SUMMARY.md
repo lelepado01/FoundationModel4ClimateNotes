@@ -40,6 +40,7 @@
 - [FourcastNet](./fourcastnet.md)
 - [GraphCast](./graphcast.md)
 - [PrithViWxC](./prithviwxc.md)
+- [ORBIT](./orbit.md)
 
 - [Climate Benchmarks]()
     - [ClimateLearn](./climatelearn.md)
@@ -105,6 +106,7 @@
 - [RO-Crate](./ro-crate.md)
 - [Workflow Run ROC](./workflow_run_roc.md)
 - [Collecting Managing and Analyzing Provenance Data](./collecting_managing_analyzing_provenance_data.md)
+- [Provenance-based IDs](./provenance-based_ids.md)
 
 # Energy Efficiency
 - [Metrics](./ee_metrics.md)        
@@ -113,6 +115,8 @@
 - [Computational/Energy Use of CMIP6](./computational_energy_use_of_cmip6.md)
 - [Energy Intensity of Internet Data Transmission](./energy_intensity_of_internet_data_transmission.md)
 - [Green AI](./green_ai.md)
+- [Green 500 Metrics](./green_500_metrics.md)
+- [Data center EE](./data_centers_ee.md)
 
 # Growing Models
 - [LSTMVis](./lstmvis.md)
@@ -128,6 +132,9 @@
 - [Model Comparison](./model_comparison.md)
 - [Challenges and Opportunities](./challenges_and_opportunities.md)
 - [FM4C Improvements](./improvements.md)
+- [WandB Webinar](./wandb_webinar.md)
+- [Zero](./zero.md)
+- [Zero++](./zero++.md)
 
 # Ideas
 - [Fire behavior](./fire_behavior.md)
