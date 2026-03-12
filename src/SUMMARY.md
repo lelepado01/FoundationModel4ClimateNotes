@@ -46,6 +46,7 @@
     - [ClimateLearn](./climatelearn.md)
     - [ClimateBench](./climatebench.md)
     - [WeatherBench](./weatherbench.md)
+    - [Chameleon Cloud](./chameleon_cloud.md)
 
 - [IPCC Reports]()
     - [WG1](ipcc_wg1.md)
@@ -72,8 +73,10 @@
 - [Compute Optimal LLMs](./compute_optimal_llms.md)
 - [Data Optimal LLMs](./data_optimal_llms.md)
 
-# Development
+# Development and Reproducibility
 - [Parallelization](./parallelization.md)
+- [ACM Badges](./acm_badges.md)
+- [Containers for Reproducibility](./containers_for_reprod.md)
 
 # Boring AI
 - [Data Quality](./data_quality.md)
@@ -117,6 +120,7 @@
 - [Green AI](./green_ai.md)
 - [Green 500 Metrics](./green_500_metrics.md)
 - [Data center EE](./data_centers_ee.md)
+- [Carbon Intensity Estimation](./carbon_intensity.md)
 
 # Growing Models
 - [LSTMVis](./lstmvis.md)
